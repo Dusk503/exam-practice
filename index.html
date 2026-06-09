@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>刷题中心</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f2f5;color:#333;min-height:100vh;display:flex;flex-direction:column}
+.header{background:linear-gradient(135deg,#667eea,#764ba2);color:#fff;padding:40px 20px 30px;text-align:center}
+.header h1{font-size:28px;font-weight:700;margin-bottom:8px}
+.header p{font-size:15px;opacity:.85}
+.subtitle{font-size:13px;margin-top:6px;opacity:.7}
+.container{flex:1;padding:24px 16px;max-width:500px;margin:0 auto;width:100%}
+.card{background:#fff;border-radius:16px;padding:28px 24px;margin-bottom:16px;cursor:pointer;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:all .2s;display:flex;align-items:center;gap:18px}
+.card:active{transform:scale(.97)}
+.card-icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
+.card-icon.ai{background:linear-gradient(135deg,#4A90D9,#357ABD)}
+.card-icon.en{background:linear-gradient(135deg,#27ae60,#1e8449)}
+.card-info{flex:1}
+.card-title{font-size:18px;font-weight:600;margin-bottom:4px}
+.card-desc{font-size:13px;color:#999;line-height:1.4}
+.card-arrow{font-size:20px;color:#ccc}
+.footer{text-align:center;padding:16px;color:#bbb;font-size:12px}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📚 刷题中心</h1>
+  <p>选择科目开始刷题</p>
+  <div class="subtitle">66%题库覆盖 · 顺序/随机模式 · 错题本</div>
+</div>
+
+<div class="container">
+  <div class="card" onclick="location.href='ai.html'">
+    <div class="card-icon ai">🤖</div>
+    <div class="card-info">
+      <div class="card-title">人工智能基础与应用</div>
+      <div class="card-desc">300+ 题 · 单选 / 多选 / 判断 · 6大章节</div>
+    </div>
+    <div class="card-arrow">›</div>
+  </div>
+
+  <div class="card" onclick="location.href='en.html'">
+    <div class="card-icon en">📖</div>
+    <div class="card-info">
+      <div class="card-title">大学英语(3) 期末复习</div>
+      <div class="card-desc">300+ 题 · 词汇语法 / 完形 / 阅读 / 翻译</div>
+    </div>
+    <div class="card-arrow">›</div>
+  </div>
+</div>
+
+<div class="footer">小项科技 🚀 · 2026</div>
+
+</body>
+</html>
