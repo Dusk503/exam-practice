@@ -216,7 +216,10 @@ function render() {
   const done = wrongIds.length;
 
   if (examMode) {
-    stats.textContent = `共${total}题 | 考试中 (${questions.length}题)`;
+    const wrongCnt = examAnswers.filter(a => !a.correct).length;
+    const curScore = examAnswers.reduce((s, a) => s + (a.correct ? a.score : 0), 0);
+    const maxScore = questions.reduce((s, q) => s + (q._examScore || 0), 0);
+    stats.textContent = `考试中 ${currentIndex+1}/${questions.length}题 · ❌${wrongCnt}错 · 📊${curScore}/${maxScore}分`;
     document.getElementById('chapter-filter').disabled = true;
   } else {
     stats.textContent = `共${total}题 | 错题${done}题`;
@@ -262,7 +265,7 @@ function render() {
 }
 
 function selectOpt(qid, val) {
-  const q = QS.find(x => x.id === qid) || questions.find(x => x.id === qid);
+  const q = questions.find(x => x.id === qid) || QS.find(x => x.id === qid);
   if (!q) return;
   const opts = document.querySelectorAll(`#options-${qid} .q-option`);
   window['_selected_' + qid] = val;
@@ -274,7 +277,7 @@ function selectOpt(qid, val) {
 }
 
 function submitAnswer(qid) {
-  const q = QS.find(x => x.id === qid) || questions.find(x => x.id === qid);
+  const q = questions.find(x => x.id === qid) || QS.find(x => x.id === qid);
   if (!q) return;
   const opts = document.querySelectorAll(`#options-${qid} .q-option`);
   const btn = document.getElementById(`submit-${qid}`);
