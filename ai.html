@@ -136,7 +136,11 @@ function generateExam() {
     shuffle(pool);
     const selected = pool.slice(0, Math.min(part.count, pool.length));
     selected.forEach((q, i) => {
-      questions.push({ ...q, _examScore: part.scorePer, _examLabel: part.label });
+      // 深拷贝避免污染原始题库
+      const cloned = JSON.parse(JSON.stringify(q));
+      // 打乱选项顺序（答案跟着变，但题目本身不变）
+      shuffleExamOptions(cloned);
+      questions.push({ ...cloned, _examScore: part.scorePer, _examLabel: part.label });
     });
   });
 
@@ -181,6 +185,42 @@ function updateTimer() {
 }
 
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a}
+
+function shuffleExamOptions(q) {
+  // 判断题不随机选项（只有正确/错误两个，无需打乱）
+  if (q.type === '判断' || q.type === '判断 ') return;
+  
+  const labels = ['A', 'B', 'C', 'D', 'E', 'F', 'G'];
+  
+  // 记录正确答案对应的文本
+  let correctTexts = [];
+  if (q.type === '多选' || q.type === '多选 ') {
+    correctTexts = q.answer.split('').map(label => {
+      const opt = q.options.find(o => o.label === label);
+      return opt ? opt.text : '';
+    }).filter(Boolean);
+  } else {
+    const correctOpt = q.options.find(o => o.label === q.answer);
+    correctTexts = correctOpt ? [correctOpt.text] : [];
+  }
+  
+  // 打乱选项顺序
+  shuffle(q.options);
+  
+  // 重新分配 A B C D 标签
+  q.options.forEach((opt, i) => { opt.label = labels[i]; });
+  
+  // 根据文本重新定位正确答案的标签
+  if (q.type === '多选' || q.type === '多选 ') {
+    q.answer = correctTexts.map(text => {
+      const opt = q.options.find(o => o.text === text);
+      return opt ? opt.label : '';
+    }).filter(Boolean).sort().join('');
+  } else {
+    const correctOpt = q.options.find(o => o.text === correctTexts[0]);
+    if (correctOpt) q.answer = correctOpt.label;
+  }
+}
 
 function render() {
   const area = document.getElementById('question-area');
