@@ -288,7 +288,7 @@ function render() {
 }
 
 function selectOpt(qid, val) {
-  const q = questions.find(x => x.id === qid) || QS.find(x => x.id === qid);
+  const q = questions[currentIndex];
   if (!q) return;
   const opts = document.querySelectorAll(`#options-${qid} .q-option`);
 
@@ -313,7 +313,7 @@ function selectOpt(qid, val) {
 }
 
 function submitAnswer(qid) {
-  const q = questions.find(x => x.id === qid) || QS.find(x => x.id === qid);
+  const q = questions[currentIndex];
   if (!q) return;
   const opts = document.querySelectorAll(`#options-${qid} .q-option`);
   const btn = document.getElementById(`submit-${qid}`);
