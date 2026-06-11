@@ -127,7 +127,7 @@ function loadQuestions() {
 function generateExam() {
   examMode = true;
   examAnswers = [];
-  questions = [];
+  let allBlocks = []; // Each block is an array of 1 or 5 questions
 
   EXAM_CONFIG.parts.forEach(part => {
     let pool = QS.filter(q => {
@@ -135,18 +135,48 @@ function generateExam() {
       if (part.type) return q.type === part.type;
       return true;
     });
-    shuffle(pool);
-    const selected = pool.slice(0, Math.min(part.count, pool.length));
-    selected.forEach(q => {
-      // 深拷贝避免污染原始题库
-      const cloned = JSON.parse(JSON.stringify(q));
-      // 打乱选项顺序（答案跟着变，但题目本身不变）
-      shuffleExamOptions(cloned);
-      questions.push({ ...cloned, _examScore: part.scorePer, _examLabel: part.label });
-    });
+
+    const isReadingComp = part.label === '阅读理解';
+
+    if (isReadingComp) {
+      // Group by passage chapter, pick 2 whole passages (5 q each = 10 q total)
+      const passageChapters = [...new Set(pool.map(q => q.chapter))].filter(Boolean);
+      shuffle(passageChapters);
+      const selectedChapters = passageChapters.slice(0, 2);
+
+      selectedChapters.forEach((ch, chIdx) => {
+        let block = pool.filter(q => q.chapter === ch).map((q, idx) => {
+          const cloned = JSON.parse(JSON.stringify(q));
+          cloned.options = [
+            { label: '对', text: '正确' },
+            { label: '错', text: '错误' }
+          ];
+          cloned._examScore = part.scorePer;
+          cloned._examLabel = part.label;
+          cloned._readingPassage = 'Passage ' + (chIdx + 1);
+          cloned._readingPassageId = ch;
+          cloned._readingPassageIndex = idx + 1;
+          return cloned;
+        });
+        allBlocks.push(block);
+      });
+    } else {
+      // Other parts: individual questions
+      shuffle(pool);
+      const selected = pool.slice(0, Math.min(part.count, pool.length));
+      selected.forEach(q => {
+        const cloned = JSON.parse(JSON.stringify(q));
+        shuffleExamOptions(cloned);
+        cloned._examScore = part.scorePer;
+        cloned._examLabel = part.label;
+        allBlocks.push([cloned]);
+      });
+    }
   });
 
-  shuffle(questions);
+  // Shuffle blocks (passage blocks stay together), then flatten
+  shuffle(allBlocks);
+  questions = allBlocks.flat();
 
   if (questions.length === 0) {
     document.getElementById('question-area').innerHTML = '<div class="empty-state">❌ 无法生成试卷（题库不足）</div>';
@@ -233,6 +263,21 @@ function render() {
   }
 
   const q = questions[currentIndex];
+
+  // Reading passage: render all 5 questions in one card
+  if (q._readingPassageId && examMode) {
+    let pq = [];
+    let endIdx = currentIndex;
+    for (let i = currentIndex; i < questions.length; i++) {
+      if (questions[i]._readingPassageId === q._readingPassageId) {
+        pq.push(questions[i]);
+        endIdx = i;
+      } else break;
+    }
+    renderReadingPassage(pq, currentIndex, endIdx);
+    return;
+  }
+
   const pct = ((currentIndex + 1) / questions.length * 100).toFixed(1);
   document.getElementById('progress-fill').style.width = pct + '%';
 
@@ -276,9 +321,140 @@ function selectOpt(qid, val) {
   });
 }
 
+// ========= 阅读理解整篇显示（考试模式） =========
+function renderReadingPassage(pq, startIdx, endIdx) {
+  const totalQ = questions.length;
+  const pct = ((endIdx + 1) / totalQ * 100).toFixed(1);
+  document.getElementById('progress-fill').style.width = pct + '%';
+
+  const passageScore = pq.reduce((s, q) => s + (q._examScore || 0), 0);
+  const wrongCnt = examAnswers.filter(a => !a.correct).length;
+  const curScore = examAnswers.reduce((s, a) => s + (a.correct ? a.score : 0), 0);
+  const maxScore = questions.reduce((s, q) => s + (q._examScore || 0), 0);
+  document.getElementById('header-stats').textContent = `考试中 ${endIdx+1}/${totalQ}题 · ❌${wrongCnt}错 · 📊${curScore}/${maxScore}分`;
+
+  window._passageEndIdx = endIdx;
+
+  let html = `<div class="q-card" id="qcard-passage-${pq[0].id}">
+    <div class="q-meta">
+      📋 第 ${startIdx+1}-${endIdx+1}/${totalQ} 题
+      <span id="exam-timer" class="exam-timer">⏱ ${EXAM_CONFIG.timeMinutes}:00</span>
+    </div>
+    <div class="q-text">📖 ${pq[0]._examLabel} — ${pq[0]._readingPassage}（第 ${startIdx+1}-${endIdx+1} 题，共 ${passageScore} 分）</div>`;
+
+  pq.forEach((q, i) => {
+    html += `<div style="margin-top:14px;padding-top:12px;border-top:1px solid #eee;">
+      <div style="font-size:14px;font-weight:500;margin-bottom:8px;">${i+1}. ${q.question}</div>
+      <div class="q-options" id="options-${q.id}">`;
+    q.options.forEach(o => {
+      html += `<div class="q-option" data-val="${o.label}" onclick="selectOpt(${q.id},'${o.label}')"><span class="label">${o.label}</span> ${o.text}</div>`;
+    });
+    html += '</div></div>';
+    window['_selected_' + q.id] = null;
+  });
+
+  html += `<button class="q-btn submit" id="submit-passage-${pq[0].id}" onclick="submitReadingPassage(${pq[0].id})">提交本组答案</button>
+    <div class="q-result" id="result-passage-${pq[0].id}"></div>
+  </div>`;
+
+  document.getElementById('question-area').innerHTML = html;
+}
+
+function submitReadingPassage(firstQid) {
+  const passageId = questions[currentIndex]._readingPassageId;
+  const pq = [];
+  for (let i = currentIndex; i < questions.length; i++) {
+    if (questions[i]._readingPassageId === passageId) pq.push(questions[i]);
+    else break;
+  }
+
+  // Validation: all must be answered
+  const unanswered = pq.filter(q => !window['_selected_' + q.id]);
+  if (unanswered.length > 0) {
+    const result = document.getElementById('result-passage-' + firstQid);
+    result.className = 'q-result show wrong';
+    result.textContent = '⚠️ 请回答所有题目后再提交';
+    return;
+  }
+
+  // Disable all options & hide submit
+  pq.forEach(q => {
+    document.querySelectorAll(`#options-${q.id} .q-option`).forEach(o => o.classList.add('disabled'));
+  });
+  const submitBtn = document.getElementById('submit-passage-' + firstQid);
+  if (submitBtn) submitBtn.style.display = 'none';
+
+  // Grade each question
+  pq.forEach(q => {
+    const sel = window['_selected_' + q.id];
+    const correct = sel === q.answer;
+    const opts = document.querySelectorAll(`#options-${q.id} .q-option`);
+    opts.forEach(o => {
+      if (o.dataset.val === q.answer) o.classList.add('correct');
+      if (o.dataset.val === sel && !correct) o.classList.add('wrong');
+    });
+    examAnswers.push({ id: q.id, correct, score: q._examScore || 0, sel });
+    if (!correct && !wrongIds.includes(q.id)) {
+      wrongIds.push(q.id);
+      localStorage.setItem('enWrongIds', JSON.stringify(wrongIds));
+    }
+  });
+
+  // Show result
+  const correctCount = pq.filter(q => window['_selected_' + q.id] === q.answer).length;
+  const allCorrect = correctCount === pq.length;
+  const result = document.getElementById('result-passage-' + firstQid);
+  result.className = `q-result show ${allCorrect ? 'correct' : 'wrong'}`;
+  result.textContent = allCorrect ? `✅ 全部正确！（${correctCount}/${pq.length}）` : `❌ 正确 ${correctCount}/${pq.length} 题`;
+
+  // Continue button
+  const card = document.getElementById('qcard-passage-' + firstQid);
+  const passageEndIdx = window._passageEndIdx || (currentIndex + pq.length - 1);
+  const nbtn = document.createElement('button');
+
+  if (passageEndIdx < questions.length - 1) {
+    if (allCorrect) {
+      nbtn.className = 'q-btn next-auto';
+      nbtn.textContent = '⏳ 正确！3秒后自动跳转...';
+      nbtn.disabled = true;
+      card.appendChild(nbtn);
+      setTimeout(() => {
+        if (nbtn.parentNode) {
+          currentIndex = passageEndIdx + 1;
+          if (currentIndex >= questions.length) finishExam();
+          else render();
+        }
+      }, 3000);
+    } else {
+      nbtn.className = 'q-btn next';
+      nbtn.textContent = '继续 →';
+      nbtn.onclick = () => { currentIndex = passageEndIdx + 1; render(); };
+      card.appendChild(nbtn);
+    }
+  } else {
+    if (allCorrect) {
+      nbtn.className = 'q-btn next-auto';
+      nbtn.textContent = '⏳ 正确！3秒后查看结果...';
+      nbtn.disabled = true;
+      card.appendChild(nbtn);
+      setTimeout(() => { if (nbtn.parentNode) finishExam(); }, 3000);
+    } else {
+      nbtn.className = 'q-btn return-btn';
+      nbtn.textContent = '📊 查看考试结果';
+      nbtn.onclick = finishExam;
+      card.appendChild(nbtn);
+    }
+  }
+}
+
 function submitAnswer(qid) {
   const q = questions[currentIndex];
   if (!q) return;
+  // Route reading passage questions to bulk submit
+  if (q._readingPassageId && examMode) {
+    submitReadingPassage(qid);
+    return;
+  }
   const opts = document.querySelectorAll(`#options-${qid} .q-option`);
   const btn = document.getElementById(`submit-${qid}`);
   const result = document.getElementById(`result-${qid}`);
@@ -301,7 +477,7 @@ function submitAnswer(qid) {
   });
 
   if (examMode) {
-    examAnswers.push({ id: q.id, correct, score: q._examScore || 0 });
+    examAnswers.push({ id: q.id, correct, score: q._examScore || 0, sel: selected });
   }
 
   result.className = `q-result show ${correct ? 'correct' : 'wrong'}`;
@@ -395,7 +571,7 @@ function finishExam() {
     </div>
     <div id="exam-detail-${i}" style="display:none;padding:8px 4px 12px 26px;font-size:13px;background:#fafafa;border-radius:6px;margin-bottom:4px;">
       <div style="color:#999;">正确答案：${q.answer}</div>
-      <div style="color:${isCorr?'#27ae60':'#e74c3c'};">你的答案：${isCorr?'正确':'错误'}</div>
+      <div style="color:${isCorr?'#27ae60':'#e74c3c'};">你的选择：${ans.sel ? ans.sel : (isCorr?'正确':'错误')}</div>
     </div>`;
   });
 
