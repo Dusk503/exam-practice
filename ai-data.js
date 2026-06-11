@@ -426,7 +426,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 1,
+  "id": 18,
   "chapter": "第一章",
   "type": "多选",
   "question": "图灵测试的核心流程与判定标准包含（）。",
@@ -451,7 +451,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 2,
+  "id": 19,
   "chapter": "第一章",
   "type": "多选",
   "question": "人工智能三大学派包含（）。",
@@ -476,7 +476,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 3,
+  "id": 20,
   "chapter": "第一章",
   "type": "多选",
   "question": "符号主义 AI 的核心特点是（）。",
@@ -501,7 +501,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 4,
+  "id": 21,
   "chapter": "第一章",
   "type": "多选",
   "question": "连接主义 AI 的核心内容包括（）。",
@@ -526,7 +526,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 5,
+  "id": 22,
   "chapter": "第一章",
   "type": "多选",
   "question": "人工智能伦理治理体系包括（）。",
@@ -551,7 +551,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 6,
+  "id": 23,
   "chapter": "第一章",
   "type": "多选",
   "question": "智能音箱和刷脸支付等应用体现的 AI 能力有（）。",
@@ -576,7 +576,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 1,
+  "id": 24,
   "chapter": "第一章",
   "type": "判断",
   "question": "协同过滤推荐算法是外卖个性化推荐中“猜中用户偏好”的核心技术。（）",
@@ -584,7 +584,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 2,
+  "id": 25,
   "chapter": "第一章",
   "type": "判断",
   "question": "图灵测试的判定标准是：机器的所有回答都能让人类测试者误认为是人类所答。（）",
@@ -592,7 +592,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 3,
+  "id": 26,
   "chapter": "第一章",
   "type": "判断",
   "question": "连接主义AI主张通过符号系统模拟人类思维过程，基于数理逻辑实现智能。（）",
@@ -600,7 +600,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 4,
+  "id": 27,
   "chapter": "第一章",
   "type": "判断",
   "question": "1997年IBM“深蓝”战胜国际象棋世界冠军，属于人工智能机器学习崛起期的成果。（）",
@@ -608,7 +608,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 5,
+  "id": 28,
   "chapter": "第一章",
   "type": "判断",
   "question": "欧盟《通用人工智能行为准则》主要涵盖透明度、版权及安全与保障三个方面。（）",
@@ -616,7 +616,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 6,
+  "id": 29,
   "chapter": "第一章",
   "type": "判断",
   "question": "人工智能伦理治理仅需在技术应用阶段进行事后补救即可。（）",
@@ -624,7 +624,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 7,
+  "id": 30,
   "chapter": "第一章",
   "type": "判断",
   "question": "智能音箱实现“播放新闻”指令的执行，只依赖于自然语言处理技术。（）",
@@ -632,7 +632,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 8,
+  "id": 31,
   "chapter": "第一章",
   "type": "判断",
   "question": "达特茅斯会议上，纽厄尔和西蒙展示的“逻辑理论家”是世界上第一个人工智能程序。（）",
@@ -640,7 +640,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 9,
+  "id": 32,
   "chapter": "第一章",
   "type": "判断",
   "question": "深度学习爆发期的核心驱动力是大数据与GPU算力的结合。（）",
@@ -648,7 +648,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 10,
+  "id": 33,
   "chapter": "第一章",
   "type": "判断",
   "question": "大数据杀熟现象属于人工智能伦理中“公平性与算法偏见”的核心问题范畴。（）",
@@ -656,7 +656,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 1,
+  "id": 34,
   "chapter": "第二章",
   "type": "单选",
   "question": "在机器学习中，我们希望机器判断出的最终答案被称为（）。",
@@ -681,7 +681,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 2,
+  "id": 35,
   "chapter": "第二章",
   "type": "单选",
   "question": "电商平台用户的年龄、商品的价格、用户在商品页面的停留时间，在机器学习中属于（）。",
@@ -706,7 +706,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 3,
+  "id": 36,
   "chapter": "第二章",
   "type": "单选",
   "question": "机器学习中，算法的本质是（）。",
@@ -731,7 +731,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 4,
+  "id": 37,
   "chapter": "第二章",
   "type": "单选",
   "question": "以“奖励/惩罚”为反馈，让机器在环境中通过不断试错优化行为策略的学习方式是（）。",
@@ -756,7 +756,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 5,
+  "id": 38,
   "chapter": "第二章",
   "type": "单选",
   "question": "早期垃圾邮件过滤主要采用的传统机器学习算法，属于基于统计概率的方法的是（）。",
@@ -781,7 +781,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 6,
+  "id": 39,
   "chapter": "第二章",
   "type": "单选",
   "question": "引爆深度学习革命的三大核心驱动力不包括（）。",
@@ -806,7 +806,7 @@ const QS_AI = [
   "answer": "D"
  },
  {
-  "id": 7,
+  "id": 40,
   "chapter": "第二章",
   "type": "单选",
   "question": "深度神经网络中，“深度”的来源是（）。",
@@ -831,7 +831,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 8,
+  "id": 41,
   "chapter": "第二章",
   "type": "单选",
   "question": "深度学习中，用于衡量模型预测答案与真实答案差距的是（）。",
@@ -856,7 +856,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 9,
+  "id": 42,
   "chapter": "第二章",
   "type": "单选",
   "question": "利用计算机技术将一种自然语言自动转换为另一种自然语言的过程，属于自然语言处理的哪个应用（）。",
@@ -881,7 +881,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 10,
+  "id": 43,
   "chapter": "第二章",
   "type": "单选",
   "question": "对文本的主客观性、观点、情绪、极性进行挖掘和分析，判断文本情感倾向的技术是（）。",
@@ -906,7 +906,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 11,
+  "id": 44,
   "chapter": "第二章",
   "type": "单选",
   "question": "计算机视觉中，利用深度卷积网络将高维像素数据转化为低维、具有判别力的特征向量，属于图像识别的哪个步骤（）。",
@@ -931,7 +931,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 12,
+  "id": 45,
   "chapter": "第二章",
   "type": "单选",
   "question": "被类比为人工智能“脑干与小脑”，负责逻辑清晰的分类和预测任务的技术是（）。",
@@ -956,7 +956,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 13,
+  "id": 46,
   "chapter": "第二章",
   "type": "单选",
   "question": "人工智能领域中“垃圾进，垃圾出”的原则，核心强调的是（）的重要性。",
@@ -981,7 +981,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 14,
+  "id": 47,
   "chapter": "第二章",
   "type": "单选",
   "question": "金融数据、销售记录、西瓜的特征与标签记录表，属于哪种数据类型（）。",
@@ -1006,7 +1006,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 15,
+  "id": 48,
   "chapter": "第二章",
   "type": "单选",
   "question": "占据机器学习数据集最大比例（60%-80%），作为模型核心学习材料的是（）。",
@@ -1031,7 +1031,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 16,
+  "id": 49,
   "chapter": "第二章",
   "type": "单选",
   "question": "数据预处理中，将“男/女”“红色/绿色”等文本信息转换为机器能识别的数字，属于哪个步骤（）。",
@@ -1056,7 +1056,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 17,
+  "id": 50,
   "chapter": "第二章",
   "type": "单选",
   "question": "以下哪种模型的形态是“巨大的矩阵与张量，存储海量权重”（）。",
@@ -1081,7 +1081,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 18,
+  "id": 51,
   "chapter": "第二章",
   "type": "单选",
   "question": "机器在学习时，利用带有明确“正确答案”（标签）的数据，通过比对自身解答与正确答案调整模型的学习方式是（）。",
@@ -1106,7 +1106,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 19,
+  "id": 52,
   "chapter": "第二章",
   "type": "单选",
   "question": "传统机器学习中，“机器是瞎子，人是导盲犬”描述的是哪种方法的核心哲学（）。",
@@ -1131,7 +1131,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 20,
+  "id": 53,
   "chapter": "第二章",
   "type": "单选",
   "question": "人工神经元模型中，代表神经元对输入信息重视程度的是（）。",
@@ -1156,7 +1156,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 21,
+  "id": 54,
   "chapter": "第二章",
   "type": "单选",
   "question": "用于微调神经元激活阈值，代表神经元“固有激活倾向”的是（）。",
@@ -1181,7 +1181,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 22,
+  "id": 55,
   "chapter": "第二章",
   "type": "单选",
   "question": "深度学习中，将损失值的误差责任逐层反向分配给每个权重和偏置的机制是（）。",
@@ -1206,7 +1206,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 23,
+  "id": 56,
   "chapter": "第二章",
   "type": "单选",
   "question": "生成式AI与传统深度学习（判别式模型）的核心学习目标差异是：生成式AI侧重（）。",
@@ -1231,7 +1231,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 24,
+  "id": 57,
   "chapter": "第二章",
   "type": "单选",
   "question": "生成式AI的处理逻辑属于（）。",
@@ -1256,7 +1256,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 25,
+  "id": 58,
   "chapter": "第二章",
   "type": "单选",
   "question": "被称为“人工智能皇冠上的明珠”的人工智能分支是（）。",
@@ -1281,7 +1281,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 26,
+  "id": 59,
   "chapter": "第二章",
   "type": "单选",
   "question": "2017年，谷歌提出的（）架构，为现代自然语言处理和大语言模型奠定了基础。",
@@ -1306,7 +1306,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 27,
+  "id": 60,
   "chapter": "第二章",
   "type": "单选",
   "question": "赋予计算机“看懂”世界的能力，对图像、视频等视觉信息进行感知、理解与分析的技术是（）。",
@@ -1331,7 +1331,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 28,
+  "id": 61,
   "chapter": "第二章",
   "type": "单选",
   "question": "数字图像中，仅包含单通道灰度信息，像素值在0-255之间的是（）。",
@@ -1356,7 +1356,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 29,
+  "id": 62,
   "chapter": "第二章",
   "type": "单选",
   "question": "人脸识别技术的研究范围不包括（）。",
@@ -1381,7 +1381,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 30,
+  "id": 63,
   "chapter": "第二章",
   "type": "单选",
   "question": "被称为人工智能“灵感区”，能够进行内容创作的技术是（）。",
@@ -1406,7 +1406,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 31,
+  "id": 64,
   "chapter": "第二章",
   "type": "单选",
   "question": "负责让机器“听懂人话、说人话”，搭建人机沟通桥梁的技术是（）。",
@@ -1431,7 +1431,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 32,
+  "id": 65,
   "chapter": "第二章",
   "type": "单选",
   "question": "以下不属于高质量数据核心标准的是（）。",
@@ -1456,7 +1456,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 33,
+  "id": 66,
   "chapter": "第二章",
   "type": "单选",
   "question": "机器在无任何标签的海量数据中，自主发现数据隐藏结构、规律和群组的学习方式是（）。",
@@ -1481,7 +1481,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 34,
+  "id": 67,
   "chapter": "第二章",
   "type": "单选",
   "question": "以下属于基于人工特征工程方法的代表算法是（）。",
@@ -1506,7 +1506,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 35,
+  "id": 68,
   "chapter": "第二章",
   "type": "单选",
   "question": "传统机器学习中，XGBoost属于哪种方法的代表算法（）。",
@@ -1531,7 +1531,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 36,
+  "id": 69,
   "chapter": "第二章",
   "type": "单选",
   "question": "深度神经网络中，负责接收原始数据，不进行任何计算的网络层是（）。",
@@ -1556,7 +1556,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 37,
+  "id": 70,
   "chapter": "第二章",
   "type": "单选",
   "question": "若深度神经网络中不使用激活函数，其本质等同于（）。",
@@ -1581,7 +1581,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 38,
+  "id": 71,
   "chapter": "第二章",
   "type": "单选",
   "question": "生成式AI的输出性质是（）。",
@@ -1606,7 +1606,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 39,
+  "id": 72,
   "chapter": "第二章",
   "type": "单选",
   "question": "自然语言处理的两大核心内容是（）。",
@@ -1631,7 +1631,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 40,
+  "id": 73,
   "chapter": "第二章",
   "type": "单选",
   "question": "标志着自然语言处理领域正式开启大语言模型时代的是（）的发布。",
@@ -1656,7 +1656,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 1,
+  "id": 74,
   "chapter": "第二章",
   "type": "多选",
   "question": "以下属于高质量数据核心标准的有（）。",
@@ -1678,10 +1678,10 @@ const QS_AI = [
     "text": "时效性"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 2,
+  "id": 75,
   "chapter": "第二章",
   "type": "多选",
   "question": "机器学习中，数据集被划分为三个部分，分别是（），三者各司其职，共同完成模型的训练与评估。",
@@ -1706,7 +1706,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 3,
+  "id": 76,
   "chapter": "第二章",
   "type": "多选",
   "question": "以下关于机器学习模型形态的描述，正确的有（）。",
@@ -1728,10 +1728,10 @@ const QS_AI = [
     "text": "K近邻模型——即时索引化的数据库"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 4,
+  "id": 77,
   "chapter": "第二章",
   "type": "多选",
   "question": "按照任务类型划分，机器学习模型包括（）。",
@@ -1753,10 +1753,10 @@ const QS_AI = [
     "text": "生成模型"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 5,
+  "id": 78,
   "chapter": "第二章",
   "type": "多选",
   "question": "以下属于常见机器学习方式的有（）。",
@@ -1778,10 +1778,10 @@ const QS_AI = [
     "text": "自监督学习"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 6,
+  "id": 79,
   "chapter": "第二章",
   "type": "多选",
   "question": "关于有监督学习、无监督学习、强化学习的区别，描述正确的有（）。",
@@ -1806,7 +1806,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 7,
+  "id": 80,
   "chapter": "第二章",
   "type": "多选",
   "question": "传统机器学习解决问题的三大核心路径包括（）",
@@ -1831,7 +1831,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 8,
+  "id": 81,
   "chapter": "第二章",
   "type": "多选",
   "question": "以下属于基于规则与逻辑方法的代表算法有（）。",
@@ -1853,10 +1853,10 @@ const QS_AI = [
     "text": "支持向量机"
    }
   ],
-  "answer": "ABCE"
+  "answer": "ABC"
  },
  {
-  "id": 9,
+  "id": 82,
   "chapter": "第二章",
   "type": "多选",
   "question": "基于统计概率方法的核心特点包括（）。",
@@ -1878,10 +1878,10 @@ const QS_AI = [
     "text": "高度依赖人工提取的特征"
    }
   ],
-  "answer": "ABCE"
+  "answer": "ABC"
  },
  {
-  "id": 10,
+  "id": 83,
   "chapter": "第二章",
   "type": "多选",
   "question": "引爆深度学习革命的三大驱动力是（）。",
@@ -1906,7 +1906,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 11,
+  "id": 84,
   "chapter": "第二章",
   "type": "多选",
   "question": "深度神经网络的基本网络层包括（）。",
@@ -1931,7 +1931,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 12,
+  "id": 85,
   "chapter": "第二章",
   "type": "多选",
   "question": "以下关于生成式AI与传统深度学习（判别式模型）的差异，描述正确的有（）。",
@@ -1956,7 +1956,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 13,
+  "id": 86,
   "chapter": "第二章",
   "type": "多选",
   "question": "自然语言处理的具体应用形式包括（）",
@@ -1978,10 +1978,10 @@ const QS_AI = [
     "text": "问答系统"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 14,
+  "id": 87,
   "chapter": "第二章",
   "type": "多选",
   "question": "关于大语言模型的发展，正确的描述有（）。",
@@ -2006,7 +2006,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 15,
+  "id": 88,
   "chapter": "第二章",
   "type": "多选",
   "question": "情感分析技术的主要应用领域包括（）。",
@@ -2028,10 +2028,10 @@ const QS_AI = [
     "text": "影视评价分析"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 16,
+  "id": 89,
   "chapter": "第二章",
   "type": "多选",
   "question": "计算机视觉技术的核心特点包括（）",
@@ -2053,10 +2053,10 @@ const QS_AI = [
     "text": "灵活部署"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 1,
+  "id": 90,
   "chapter": "第二章",
   "type": "判断",
   "question": "深度学习被类比为人工智能的“大脑皮层”，是机器变聪明的核心，能自主从海量数据中总结规律。（）",
@@ -2064,7 +2064,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 2,
+  "id": 91,
   "chapter": "第二章",
   "type": "判断",
   "question": "数据预处理中，对于缺失了单一关键特征的数据，应直接丢弃，无需进行修补。（）",
@@ -2072,7 +2072,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 3,
+  "id": 92,
   "chapter": "第二章",
   "type": "判断",
   "question": "有监督学习的核心是利用带标签的数据，让模型建立输入到标签的精准映射。（）",
@@ -2080,7 +2080,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 4,
+  "id": 93,
   "chapter": "第二章",
   "type": "判断",
   "question": "无监督学习能让机器直接学会具体的任务技能，如做菜、分类垃圾邮件等。（）",
@@ -2088,7 +2088,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 5,
+  "id": 94,
   "chapter": "第二章",
   "type": "判断",
   "question": "强化学习中，机器的学习反馈仅包括正向的奖励，无负面的惩罚。（）",
@@ -2096,7 +2096,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 6,
+  "id": 95,
   "chapter": "第二章",
   "type": "判断",
   "question": "生成式AI的输出具有确定性，每次输入相同的指令，输出结果完全一致。（）",
@@ -2104,7 +2104,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 7,
+  "id": 96,
   "chapter": "第二章",
   "type": "判断",
   "question": "机器翻译技术发展至今，已能完全解决歧义、漏译、专业术语翻译等问题，无需人工校对。（）",
@@ -2112,7 +2112,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 8,
+  "id": 97,
   "chapter": "第二章",
   "type": "判断",
   "question": "计算机视觉的图像识别中，彩色图像通常为RGB三通道，每个通道的像素值范围为0-255。（）",
@@ -2120,7 +2120,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 9,
+  "id": 98,
   "chapter": "第二章",
   "type": "判断",
   "question": "计算机视觉相当于人工智能的“眼睛与感官”，仅能实现人脸解锁，无法感知其他物理世界信息。（）",
@@ -2128,7 +2128,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 10,
+  "id": 99,
   "chapter": "第二章",
   "type": "判断",
   "question": "机器学习中，数据就是特征，特征就是标签，三者本质是同一概念。（）",
@@ -2136,7 +2136,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 11,
+  "id": 100,
   "chapter": "第二章",
   "type": "判断",
   "question": "模型是机器学习的最终产物，是算法通过学习数据提炼出的规律的数学化表达。（）",
@@ -2144,7 +2144,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 12,
+  "id": 101,
   "chapter": "第二章",
   "type": "判断",
   "question": "传统机器学习高度依赖人类的人工特征工程，而深度学习能自动从原始数据中提取特征。（）",
@@ -2152,7 +2152,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 13,
+  "id": 102,
   "chapter": "第二章",
   "type": "判断",
   "question": "人工神经元的激活函数是线性函数，能让神经网络处理线性问题。（）",
@@ -2160,7 +2160,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 14,
+  "id": 103,
   "chapter": "第二章",
   "type": "判断",
   "question": "深度学习的训练过程中，前向传播是数据从输入层到输出层的计算过程，反向传播是参数调整的核心机制。（）",
@@ -2168,7 +2168,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 15,
+  "id": 104,
   "chapter": "第二章",
   "type": "判断",
   "question": "损失函数的核心目标是让损失值尽可能大，代表模型预测越准确。（）",
@@ -2176,7 +2176,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 16,
+  "id": 105,
   "chapter": "第二章",
   "type": "判断",
   "question": "生成式AI是独立于深度学习的全新人工智能技术，与深度学习无任何关联。（）",
@@ -2184,7 +2184,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 17,
+  "id": 106,
   "chapter": "第二章",
   "type": "判断",
   "question": "20世纪70年代后，自然语言处理研究从基于规则的方法转向基于统计的方法，语音识别率大幅提升。（）",
@@ -2192,7 +2192,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 18,
+  "id": 107,
   "chapter": "第二章",
   "type": "判断",
   "question": "语音识别的本质是模式识别，通过未知语音与已知语音的比较，匹配最优识别结果。（）",
@@ -2200,7 +2200,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 19,
+  "id": 108,
   "chapter": "第二章",
   "type": "判断",
   "question": "人脸检测的核心是将提取的人脸特征与数据库进行比对，判断是否为同一人。（）",
@@ -2208,7 +2208,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 1,
+  "id": 109,
   "chapter": "第三章",
   "type": "单选",
   "question": "与AI软件交互时，敏感数据处理的首要原则是（）。",
@@ -2233,7 +2233,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 2,
+  "id": 110,
   "chapter": "第三章",
   "type": "单选",
   "question": "Word文档中进行敏感词替换，需在“开始”菜单的哪个板块找到“替换”功能（）。",
@@ -2258,7 +2258,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 3,
+  "id": 111,
   "chapter": "第三章",
   "type": "单选",
   "question": "千问网页端的翻译功能不包含以下哪项（）。",
@@ -2283,7 +2283,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 4,
+  "id": 112,
   "chapter": "第三章",
   "type": "单选",
   "question": "豆包会议记录生成后，不支持导出的格式是（）。",
@@ -2308,7 +2308,7 @@ const QS_AI = [
   "answer": "D"
  },
  {
-  "id": 5,
+  "id": 113,
   "chapter": "第三章",
   "type": "单选",
   "question": "批量填充相同数据时，单元格右下角的小黑方块被称为（）。",
@@ -2333,7 +2333,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 6,
+  "id": 114,
   "chapter": "第三章",
   "type": "单选",
   "question": "计算多个单元格数值之和的函数是（）。",
@@ -2358,7 +2358,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 7,
+  "id": 115,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel中在一个单元格内手动换行的快捷键是（）。",
@@ -2383,7 +2383,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 8,
+  "id": 116,
   "chapter": "第三章",
   "type": "单选",
   "question": "SmartArt图形不包括以下哪个类别（）。",
@@ -2408,7 +2408,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 9,
+  "id": 117,
   "chapter": "第三章",
   "type": "单选",
   "question": "AIPPT在用户登录时，首先要求选择的是（）。",
@@ -2433,7 +2433,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 10,
+  "id": 118,
   "chapter": "第三章",
   "type": "单选",
   "question": "豆包语音转文字生成会议记录时，支持多人对话的核心功能是（）。",
@@ -2458,7 +2458,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 11,
+  "id": 119,
   "chapter": "第三章",
   "type": "单选",
   "question": "AI图像识别文字的核心技术是（）。",
@@ -2483,7 +2483,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 12,
+  "id": 120,
   "chapter": "第三章",
   "type": "单选",
   "question": "提升图片转文字识别准确率的做法不包括（）。",
@@ -2508,7 +2508,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 13,
+  "id": 121,
   "chapter": "第三章",
   "type": "单选",
   "question": "豆包中将图片转换为扫描件的操作入口是（）。",
@@ -2533,7 +2533,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 14,
+  "id": 122,
   "chapter": "第三章",
   "type": "单选",
   "question": "豆包的AI阅读功能触发方式是（）。",
@@ -2558,7 +2558,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 15,
+  "id": 123,
   "chapter": "第三章",
   "type": "单选",
   "question": "千问文档翻译支持的格式不包括（）。",
@@ -2583,7 +2583,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 16,
+  "id": 124,
   "chapter": "第三章",
   "type": "单选",
   "question": "豆包同声传译的核心技术依托于字节跳动的（）。",
@@ -2608,7 +2608,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 17,
+  "id": 125,
   "chapter": "第三章",
   "type": "单选",
   "question": "千问格式转换支持扫描版PDF转换的核心依托是（）。",
@@ -2633,7 +2633,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 18,
+  "id": 126,
   "chapter": "第三章",
   "type": "单选",
   "question": "微信语音转文字后发送的核心优势是（）。",
@@ -2658,7 +2658,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 19,
+  "id": 127,
   "chapter": "第三章",
   "type": "单选",
   "question": "AI解题答疑的局限性主要体现在（）。",
@@ -2683,7 +2683,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 20,
+  "id": 128,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel中存放和处理单个数据的最小容器是（）。",
@@ -2708,7 +2708,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 21,
+  "id": 129,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel工作簿的默认保存格式是（）。",
@@ -2733,7 +2733,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 22,
+  "id": 130,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel中显示当前活动单元格名称的区域是（）。",
@@ -2758,7 +2758,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 23,
+  "id": 131,
   "chapter": "第三章",
   "type": "单选",
   "question": "输入带前导零的学号（如012）时，为保留前导零应在数字前加（）。",
@@ -2783,7 +2783,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 24,
+  "id": 132,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel中数字超过11位时，会自动转换为（）格式。",
@@ -2808,7 +2808,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 25,
+  "id": 133,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel公式的核心规则是必须以（）开头。",
@@ -2833,7 +2833,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 26,
+  "id": 134,
   "chapter": "第三章",
   "type": "单选",
   "question": "IF函数的作用是（）。",
@@ -2858,7 +2858,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 27,
+  "id": 135,
   "chapter": "第三章",
   "type": "单选",
   "question": "需要按“部门+职称”双维度统计平均工资，最高效的工具是（）。",
@@ -2883,7 +2883,7 @@ const QS_AI = [
   "answer": "D"
  },
  {
-  "id": 28,
+  "id": 136,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel排序中，“从小到大”排列属于（）。",
@@ -2908,7 +2908,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 29,
+  "id": 137,
   "chapter": "第三章",
   "type": "单选",
   "question": "展示不同职工基本工资、奖金的对比，最适合的图表类型是（）。",
@@ -2933,7 +2933,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 30,
+  "id": 138,
   "chapter": "第三章",
   "type": "单选",
   "question": "展示各职工应发工资占比关系，最适合的图表类型是（）。",
@@ -2958,7 +2958,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 31,
+  "id": 139,
   "chapter": "第三章",
   "type": "单选",
   "question": "Excel中提取纸质名册照片中的表格数据，需使用的功能是（）。",
@@ -2983,7 +2983,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 32,
+  "id": 140,
   "chapter": "第三章",
   "type": "单选",
   "question": "使用豆包将图片中的表格转换为Excel文件，以下指令最精准的是（）。",
@@ -3008,7 +3008,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 33,
+  "id": 141,
   "chapter": "第三章",
   "type": "单选",
   "question": "以下哪项不是优质演示文稿的核心特征（）。",
@@ -3033,7 +3033,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 34,
+  "id": 142,
   "chapter": "第三章",
   "type": "单选",
   "question": "PPT制作的三大要素中，核心要素是（）。",
@@ -3058,7 +3058,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 35,
+  "id": 143,
   "chapter": "第三章",
   "type": "单选",
   "question": "PowerPoint2016中，快速新建幻灯片的快捷键是（）。",
@@ -3083,7 +3083,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 36,
+  "id": 144,
   "chapter": "第三章",
   "type": "单选",
   "question": "在PowerPoint中，插入竖排文本框的入口在哪个选项卡（）。",
@@ -3108,7 +3108,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 37,
+  "id": 145,
   "chapter": "第三章",
   "type": "单选",
   "question": "PowerPoint中对图片进行抠图的常用方法是（）。",
@@ -3133,7 +3133,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 38,
+  "id": 146,
   "chapter": "第三章",
   "type": "单选",
   "question": "PowerPoint自定义模板的文件后缀是（）。",
@@ -3158,7 +3158,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 39,
+  "id": 147,
   "chapter": "第三章",
   "type": "单选",
   "question": "PowerPoint提供的母版类型不包括（）。",
@@ -3183,7 +3183,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 40,
+  "id": 148,
   "chapter": "第三章",
   "type": "单选",
   "question": "演示PPT时，演讲者视图的优势是（）。",
@@ -3208,7 +3208,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 41,
+  "id": 149,
   "chapter": "第三章",
   "type": "单选",
   "question": "Kimi PPT助手上线时间为（）。",
@@ -3233,7 +3233,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 42,
+  "id": 150,
   "chapter": "第三章",
   "type": "单选",
   "question": "Kimi生成PPT时，不支持以下哪种输入方式（）。",
@@ -3258,7 +3258,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 43,
+  "id": 151,
   "chapter": "第三章",
   "type": "单选",
   "question": "利用DeepSeek生成PPT大纲时，提示词无需包含的信息是（）。",
@@ -3283,7 +3283,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 44,
+  "id": 152,
   "chapter": "第三章",
   "type": "单选",
   "question": "在PowerPoint预览窗口中，选中不连续的多张幻灯片需配合的快捷键是（）。",
@@ -3308,7 +3308,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 45,
+  "id": 153,
   "chapter": "第三章",
   "type": "单选",
   "question": "PowerPoint中设置背景音乐跨幻灯片播放，需在哪个选项卡操作（）。",
@@ -3333,7 +3333,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 46,
+  "id": 154,
   "chapter": "第三章",
   "type": "单选",
   "question": "AIPPT、Kimi属于哪种AI制作PPT的技术路径（）。",
@@ -3358,7 +3358,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 1,
+  "id": 155,
   "chapter": "第三章",
   "type": "多选",
   "question": "AI 多源输入时，保障信息安全的原则包括（）。",
@@ -3380,10 +3380,10 @@ const QS_AI = [
     "text": "加密传输"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 2,
+  "id": 156,
   "chapter": "第三章",
   "type": "多选",
   "question": "豆包 App 会议记录模块的核心功能包括（）。",
@@ -3405,10 +3405,10 @@ const QS_AI = [
     "text": "多格式导出与同步"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 3,
+  "id": 157,
   "chapter": "第三章",
   "type": "多选",
   "question": "豆包图像识别文字的适用场景包括（）。",
@@ -3430,10 +3430,10 @@ const QS_AI = [
     "text": "考古文献识别"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 4,
+  "id": 158,
   "chapter": "第三章",
   "type": "多选",
   "question": "豆包 AI 阅读功能的核心能力有（）。",
@@ -3458,7 +3458,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 5,
+  "id": 159,
   "chapter": "第三章",
   "type": "多选",
   "question": "千问图片翻译的适用场景包括（）。",
@@ -3480,10 +3480,10 @@ const QS_AI = [
     "text": "国外菜单翻译"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 6,
+  "id": 160,
   "chapter": "第三章",
   "type": "多选",
   "question": "豆包同声传译的核心亮点包括（）。",
@@ -3505,10 +3505,10 @@ const QS_AI = [
     "text": "支持双语字幕同步生成"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 7,
+  "id": 161,
   "chapter": "第三章",
   "type": "多选",
   "question": "豆包 AI 写作助手覆盖的职场办公场景包括（）。",
@@ -3530,10 +3530,10 @@ const QS_AI = [
     "text": "商务话术设计"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 8,
+  "id": 162,
   "chapter": "第三章",
   "type": "多选",
   "question": "豆包 AI 文档编辑与处理的核心能力包括（）。",
@@ -3558,7 +3558,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 9,
+  "id": 163,
   "chapter": "第三章",
   "type": "多选",
   "question": "AI 文字处理的核心应用模块包括（）。",
@@ -3580,10 +3580,10 @@ const QS_AI = [
     "text": "文档转换与解题答疑"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 10,
+  "id": 164,
   "chapter": "第三章",
   "type": "多选",
   "question": "Excel 的三大核心要素包括（）。",
@@ -3608,7 +3608,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 11,
+  "id": 165,
   "chapter": "第三章",
   "type": "多选",
   "question": "Excel 快速访问工具栏包含的常用命令有（）。",
@@ -3633,7 +3633,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 12,
+  "id": 166,
   "chapter": "第三章",
   "type": "多选",
   "question": "Excel 中快速填充有规律数据的方法包括（）。",
@@ -3658,7 +3658,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 13,
+  "id": 167,
   "chapter": "第三章",
   "type": "多选",
   "question": "Excel 中函数的组成部分包括（）。",
@@ -3683,7 +3683,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 14,
+  "id": 168,
   "chapter": "第三章",
   "type": "多选",
   "question": "Excel 排序的依据包括（）。",
@@ -3708,7 +3708,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 15,
+  "id": 169,
   "chapter": "第三章",
   "type": "多选",
   "question": "Excel 数据整理的常用功能包括（）。",
@@ -3730,10 +3730,10 @@ const QS_AI = [
     "text": "数据透视表"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 16,
+  "id": 170,
   "chapter": "第三章",
   "type": "多选",
   "question": "以下属于 Excel 常见图表类型的有（）。",
@@ -3755,10 +3755,10 @@ const QS_AI = [
     "text": "三维图"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 17,
+  "id": 171,
   "chapter": "第三章",
   "type": "多选",
   "question": "AI 辅助 Excel 的主要应用场景包括（）。",
@@ -3780,10 +3780,10 @@ const QS_AI = [
     "text": "错误检测与修正"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 1,
+  "id": 172,
   "chapter": "第三章",
   "type": "判断",
   "question": "豆包AI文档编辑支持多人在线编辑场景下的内容批注和修改建议生成。（）",
@@ -3791,7 +3791,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 2,
+  "id": 173,
   "chapter": "第三章",
   "type": "判断",
   "question": "使用AI解题答疑时，应优先自主思考，避免过度依赖AI工具。（）",
@@ -3799,7 +3799,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 3,
+  "id": 174,
   "chapter": "第三章",
   "type": "判断",
   "question": "一个Excel工作簿中只能包含一个工作表。（）",
@@ -3807,7 +3807,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 4,
+  "id": 175,
   "chapter": "第三章",
   "type": "判断",
   "question": "Excel中数值默认靠左对齐，文本默认靠右对齐。（）",
@@ -3815,7 +3815,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 5,
+  "id": 176,
   "chapter": "第三章",
   "type": "判断",
   "question": "按F11键可快速生成独占工作表的Excel图表。（）",
@@ -3823,7 +3823,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 6,
+  "id": 177,
   "chapter": "第三章",
   "type": "判断",
   "question": "Excel的“自图片”提取数据功能，所有Excel版本都支持。（）",
@@ -3831,7 +3831,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 7,
+  "id": 178,
   "chapter": "第三章",
   "type": "判断",
   "question": "在PowerPoint中，表格仅能插入预设行列数，无法手动绘制。（）",
@@ -3839,7 +3839,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 8,
+  "id": 179,
   "chapter": "第三章",
   "type": "判断",
   "question": "通用大模型生成的PPT大纲可直接复制到Kimi、AIPPT中，快速生成可视化PPT。（）",
@@ -3847,7 +3847,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 9,
+  "id": 180,
   "chapter": "第三章",
   "type": "判断",
   "question": "AI生成的PPT内容准确无误，无需人工进行核对和精修。（）",
@@ -3855,7 +3855,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 10,
+  "id": 181,
   "chapter": "第三章",
   "type": "判断",
   "question": "AI多源输入时，在线免费AI平台不会存在数据泄露风险。（）",
@@ -3863,7 +3863,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 11,
+  "id": 182,
   "chapter": "第三章",
   "type": "判断",
   "question": "豆包图像识别文字仅能提取印刷体，无法识别手写体。（）",
@@ -3871,7 +3871,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 12,
+  "id": 183,
   "chapter": "第三章",
   "type": "判断",
   "question": "千问文档翻译仅能翻译文本内容，无法保留原文的排版和表格位置。（）",
@@ -3879,7 +3879,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 13,
+  "id": 184,
   "chapter": "第三章",
   "type": "判断",
   "question": "豆包同声传译目前以中英互译为核心优势，支持语音-语音、语音-文本双模式。（）",
@@ -3887,7 +3887,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 14,
+  "id": 185,
   "chapter": "第三章",
   "type": "判断",
   "question": "豆包AI写作助手的“长文写作”功能可分步骤生成大纲与文档，解决长篇写作思路断层问题。（）",
@@ -3895,7 +3895,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 15,
+  "id": 186,
   "chapter": "第三章",
   "type": "判断",
   "question": "千问格式转换一次可支持多种不同类型文件的同时转换。（）",
@@ -3903,7 +3903,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 16,
+  "id": 187,
   "chapter": "第三章",
   "type": "判断",
   "question": "使用Ctrl+Enter可给多个不连续的选中单元格填充相同数据。（）",
@@ -3911,7 +3911,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 17,
+  "id": 188,
   "chapter": "第三章",
   "type": "判断",
   "question": "数据透视表的原始数据允许存在合并单元格。（）",
@@ -3919,7 +3919,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 18,
+  "id": 189,
   "chapter": "第三章",
   "type": "判断",
   "question": "豆包可直接将图片中的表格生成可下载的Excel文件，无需复制粘贴。（）",
@@ -3927,7 +3927,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 19,
+  "id": 190,
   "chapter": "第三章",
   "type": "判断",
   "question": "演示文稿仅适用于商务会议和工作汇报场景，学术研讨和课堂教学中应用较少。（）",
@@ -3935,7 +3935,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 20,
+  "id": 191,
   "chapter": "第三章",
   "type": "判断",
   "question": "PowerPoint中，新建空白幻灯片后，可通过「插入」选项卡添加文本框、图片等元素。（）",
@@ -3943,7 +3943,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 21,
+  "id": 192,
   "chapter": "第三章",
   "type": "判断",
   "question": "幻灯片母版可定义幻灯片的字形、占位符位置、背景设计等，保证PPT风格统一。（）",
@@ -3951,7 +3951,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 22,
+  "id": 193,
   "chapter": "第三章",
   "type": "判断",
   "question": "AIPPT的「上传PPT美化」功能，可在保持内容不变的基础上对PPT进行一键美化。（）",
@@ -3959,7 +3959,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 1,
+  "id": 194,
   "chapter": "第四章",
   "type": "单选",
   "question": "以下哪款工具的核心优势是超长文本处理能力（）。",
@@ -3984,7 +3984,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 2,
+  "id": 195,
   "chapter": "第四章",
   "type": "单选",
   "question": "Midjourney的主要操作平台是（）。",
@@ -4009,7 +4009,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 3,
+  "id": 196,
   "chapter": "第四章",
   "type": "单选",
   "question": "以下哪款工具是AI音乐生成领域的代表（）。",
@@ -4034,7 +4034,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 4,
+  "id": 197,
   "chapter": "第四章",
   "type": "单选",
   "question": "提示词工程的核心目的是（）。",
@@ -4059,7 +4059,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 5,
+  "id": 198,
   "chapter": "第四章",
   "type": "单选",
   "question": "以下哪项不属于提示词设计的六个原则（）。",
@@ -4084,7 +4084,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 6,
+  "id": 199,
   "chapter": "第四章",
   "type": "单选",
   "question": "生成式AI未来发展趋势中，“能主动完成复杂目标的AI系统”指的是（）。",
@@ -4109,7 +4109,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 7,
+  "id": 200,
   "chapter": "第四章",
   "type": "单选",
   "question": "构建个人提示词库的核心价值不包括（）。",
@@ -4134,7 +4134,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 8,
+  "id": 201,
   "chapter": "第四章",
   "type": "单选",
   "question": "在音频生成领域，新一代TTS技术的核心突破是（）。",
@@ -4159,7 +4159,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 9,
+  "id": 202,
   "chapter": "第四章",
   "type": "单选",
   "question": "DeepSeek在以下哪个领域表现最为突出（）。",
@@ -4184,7 +4184,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 10,
+  "id": 203,
   "chapter": "第四章",
   "type": "单选",
   "question": "OpenAI开发的文生视频标杆模型是（）。",
@@ -4209,7 +4209,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 11,
+  "id": 204,
   "chapter": "第四章",
   "type": "单选",
   "question": "能将手绘草图快速转换为可编辑UI原型的设计工具是（）。",
@@ -4234,7 +4234,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 12,
+  "id": 205,
   "chapter": "第四章",
   "type": "单选",
   "question": "Google DeepMind开发的、能预测蛋白质三维结构的AI工具是（）。",
@@ -4259,7 +4259,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 13,
+  "id": 206,
   "chapter": "第四章",
   "type": "单选",
   "question": "提示词的五个关键要素中，为AI设定专业身份的是（）。",
@@ -4284,7 +4284,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 14,
+  "id": 207,
   "chapter": "第四章",
   "type": "单选",
   "question": "提示词设计原则中，要求将复杂任务拆分为小任务的是（）。",
@@ -4309,7 +4309,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 15,
+  "id": 208,
   "chapter": "第四章",
   "type": "单选",
   "question": "生成式AI最常见的缺陷之一是（）。",
@@ -4334,7 +4334,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 16,
+  "id": 209,
   "chapter": "第四章",
   "type": "单选",
   "question": "以下哪项是端侧AI的核心优势（）。",
@@ -4359,7 +4359,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 17,
+  "id": 210,
   "chapter": "第四章",
   "type": "单选",
   "question": "以下哪款国产大模型由阿里云自主研发（）。",
@@ -4384,7 +4384,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 18,
+  "id": 211,
   "chapter": "第四章",
   "type": "单选",
   "question": "以下哪项不属于负责任使用AI的实践指南（）。",
@@ -4409,7 +4409,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 19,
+  "id": 212,
   "chapter": "第四章",
   "type": "单选",
   "question": "智谱清言由哪家公司推出（）。",
@@ -4434,7 +4434,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 1,
+  "id": 213,
   "chapter": "第四章",
   "type": "多选",
   "question": "关于生成式人工智能与分析型人工智能的区别，下列说法正确的有（）。",
@@ -4456,10 +4456,10 @@ const QS_AI = [
     "text": "分析型 AI 可以生成原创图像与文本"
    }
   ],
-  "answer": "ABCE"
+  "answer": "ABC"
  },
  {
-  "id": 2,
+  "id": 214,
   "chapter": "第四章",
   "type": "多选",
   "question": "图像生成工具的相关描述正确的有（）。",
@@ -4484,7 +4484,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 3,
+  "id": 215,
   "chapter": "第四章",
   "type": "多选",
   "question": "提示词的五个关键要素包括（）。",
@@ -4506,10 +4506,10 @@ const QS_AI = [
     "text": "约束"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 4,
+  "id": 216,
   "chapter": "第四章",
   "type": "多选",
   "question": "提示词设计应遵循的原则有（）。",
@@ -4531,10 +4531,10 @@ const QS_AI = [
     "text": "提供范例，引导输出"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 5,
+  "id": 217,
   "chapter": "第四章",
   "type": "多选",
   "question": "生成式 AI 使用中面临的伦理风险包括（）。",
@@ -4559,7 +4559,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 6,
+  "id": 218,
   "chapter": "第四章",
   "type": "多选",
   "question": "生成式 AI 未来发展趋势包括（）。",
@@ -4584,7 +4584,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 1,
+  "id": 219,
   "chapter": "第四章",
   "type": "判断",
   "question": "ChatGPT的核心优势是超长文本处理能力，适合分析海量文档。（）",
@@ -4592,7 +4592,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 2,
+  "id": 220,
   "chapter": "第四章",
   "type": "判断",
   "question": "扩散模型的图像生成过程分为加噪的前向过程和去噪的反向过程。（）",
@@ -4600,7 +4600,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 3,
+  "id": 221,
   "chapter": "第四章",
   "type": "判断",
   "question": "端侧AI指AI能力完全依赖云端服务器运行，无需本地硬件支持。（）",
@@ -4608,7 +4608,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 4,
+  "id": 222,
   "chapter": "第四章",
   "type": "判断",
   "question": "Amazon CodeWhisperer的特色功能是安全扫描和引用跟踪。（）",
@@ -4616,7 +4616,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 5,
+  "id": 223,
   "chapter": "第四章",
   "type": "判断",
   "question": "生成式人工智能的核心是分析现有数据，而非创造新内容。（）",
@@ -4624,7 +4624,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 6,
+  "id": 224,
   "chapter": "第四章",
   "type": "判断",
   "question": "提示词的五个关键要素包括角色、任务、背景、约束、范例。（）",
@@ -4632,7 +4632,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 7,
+  "id": 225,
   "chapter": "第四章",
   "type": "判断",
   "question": "直接将AI生成的内容作为学术论文提交，符合学术诚信规范。（）",
@@ -4640,7 +4640,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 1,
+  "id": 226,
   "chapter": "第五章",
   "type": "单选",
   "question": "语音合成技术发展的第一个阶段是（）。",
@@ -4665,7 +4665,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 2,
+  "id": 227,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪种工具是集成式内容创作平台的代表，内置AI文本朗读功能（）。",
@@ -4690,7 +4690,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 3,
+  "id": 228,
   "chapter": "第五章",
   "type": "单选",
   "question": "字节跳动出品的一站式AI视频创作平台是（）。",
@@ -4715,7 +4715,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 4,
+  "id": 229,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪项是Stable Diffusion发布的时间（）。",
@@ -4740,7 +4740,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 5,
+  "id": 230,
   "chapter": "第五章",
   "type": "单选",
   "question": "Stable Diffusion的核心技术基于哪种模型（）。",
@@ -4765,7 +4765,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 6,
+  "id": 231,
   "chapter": "第五章",
   "type": "单选",
   "question": "让Stable Diffusion能够理解自然语言提示词的核心技术是（）。",
@@ -4790,7 +4790,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 7,
+  "id": 232,
   "chapter": "第五章",
   "type": "单选",
   "question": "Stable Diffusion WebUI的开发者是（）。",
@@ -4815,7 +4815,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 8,
+  "id": 233,
   "chapter": "第五章",
   "type": "单选",
   "question": "国内优秀的Stable Diffusion在线WebUI平台是（）。",
@@ -4840,7 +4840,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 9,
+  "id": 234,
   "chapter": "第五章",
   "type": "单选",
   "question": "若将Checkpoint模型类比为汽车，VAE的作用相当于（）。",
@@ -4865,7 +4865,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 10,
+  "id": 235,
   "chapter": "第五章",
   "type": "单选",
   "question": "LoRA模型的文件大小通常在什么范围（）。",
@@ -4890,7 +4890,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 11,
+  "id": 236,
   "chapter": "第五章",
   "type": "单选",
   "question": "WebUI中用于控制图像生成内容的核心指令被称为（）。",
@@ -4915,7 +4915,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 12,
+  "id": 237,
   "chapter": "第五章",
   "type": "单选",
   "question": "语音的三大物理要素不包括以下哪项（）。",
@@ -4940,7 +4940,7 @@ const QS_AI = [
   "answer": "D"
  },
  {
-  "id": 13,
+  "id": 238,
   "chapter": "第五章",
   "type": "单选",
   "question": "为无失真还原原始声音信号，采样率需至少为信号最高频率的几倍（）。",
@@ -4965,7 +4965,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 14,
+  "id": 239,
   "chapter": "第五章",
   "type": "单选",
   "question": "现代神经网络TTS系统的两阶段框架不包括（）。",
@@ -4990,7 +4990,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 15,
+  "id": 240,
   "chapter": "第五章",
   "type": "单选",
   "question": "微软Edge浏览器“大声朗读”功能的核心优势是（）。",
@@ -5015,7 +5015,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 16,
+  "id": 241,
   "chapter": "第五章",
   "type": "单选",
   "question": "语音克隆技术的核心是提取说话人的哪种特征（）。",
@@ -5040,7 +5040,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 17,
+  "id": 242,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪种工具是开源TTS项目的代表，支持本地训练和私有化部署（）。",
@@ -5065,7 +5065,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 18,
+  "id": 243,
   "chapter": "第五章",
   "type": "单选",
   "question": "音频数字化过程中，在振幅轴上对采样信号进行离散化的步骤是（）。",
@@ -5090,7 +5090,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 19,
+  "id": 244,
   "chapter": "第五章",
   "type": "单选",
   "question": "AI生成视频（AIGV）的核心特征是（）。",
@@ -5115,7 +5115,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 20,
+  "id": 245,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪种技术被称为视频的“高清放大镜”，可将低清视频升级为高清（）。",
@@ -5140,7 +5140,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 21,
+  "id": 246,
   "chapter": "第五章",
   "type": "单选",
   "question": "适合跨境电商批量制作产品展示视频的工具是（）。",
@@ -5165,7 +5165,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 22,
+  "id": 247,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪种工具是3D视频生成的代表，支持文本生成3D场景动态视频（）。",
@@ -5190,7 +5190,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 23,
+  "id": 248,
   "chapter": "第五章",
   "type": "单选",
   "question": "AI视频的生产效率相比传统视频制作提升了多少倍（）。",
@@ -5215,7 +5215,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 24,
+  "id": 249,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪种技术能为视频添加过渡帧，提升播放流畅度（如30帧转60帧）（）。",
@@ -5240,7 +5240,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 25,
+  "id": 250,
   "chapter": "第五章",
   "type": "单选",
   "question": "以下哪种技术主要用于AI视频的帧率提升（）。",
@@ -5265,7 +5265,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 1,
+  "id": 251,
   "chapter": "第五章",
   "type": "多选",
   "question": "Stable Diffusion 快速普及的原因包括（）。",
@@ -5290,7 +5290,7 @@ const QS_AI = [
   "answer": "ABD"
  },
  {
-  "id": 2,
+  "id": 252,
   "chapter": "第五章",
   "type": "多选",
   "question": "声音数字化过程主要包括（）。",
@@ -5315,7 +5315,7 @@ const QS_AI = [
   "answer": "ABC"
  },
  {
-  "id": 3,
+  "id": 253,
   "chapter": "第五章",
   "type": "多选",
   "question": "现代 AI 语音生成的核心能力包括（）。",
@@ -5340,7 +5340,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 4,
+  "id": 254,
   "chapter": "第五章",
   "type": "多选",
   "question": "音频后期处理的基础操作包括（）。",
@@ -5365,7 +5365,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 5,
+  "id": 255,
   "chapter": "第五章",
   "type": "多选",
   "question": "AI 生成视频的核心技术包括（）。",
@@ -5390,7 +5390,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 6,
+  "id": 256,
   "chapter": "第五章",
   "type": "多选",
   "question": "属于国产 AI 视频工具的有（）。",
@@ -5415,7 +5415,7 @@ const QS_AI = [
   "answer": "BCD"
  },
  {
-  "id": 1,
+  "id": 257,
   "chapter": "第五章",
   "type": "判断",
   "question": "负面提示词的作用是强化图像中需要突出的元素，提升生成质量。（）",
@@ -5423,7 +5423,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 2,
+  "id": 258,
   "chapter": "第五章",
   "type": "判断",
   "question": "ComfyUI相比WebUI更适合新手用户快速上手使用。（）",
@@ -5431,7 +5431,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 3,
+  "id": 259,
   "chapter": "第五章",
   "type": "判断",
   "question": "LoRA插件需要与Checkpoint模型配合使用才能生成图像。（）",
@@ -5439,7 +5439,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 4,
+  "id": 260,
   "chapter": "第五章",
   "type": "判断",
   "question": "Tacotron 2是基于波形拼接技术的语音合成模型。（）",
@@ -5447,7 +5447,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 5,
+  "id": 261,
   "chapter": "第五章",
   "type": "判断",
   "question": "SSML可以实现语音的语速、音量、停顿等精细控制。（）",
@@ -5455,7 +5455,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 6,
+  "id": 262,
   "chapter": "第五章",
   "type": "判断",
   "question": "Stable Diffusion 1.4并非开源模型，仅授权专业机构使用。（）",
@@ -5463,7 +5463,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 7,
+  "id": 263,
   "chapter": "第五章",
   "type": "判断",
   "question": "潜在扩散模型（LDM）在像素空间进行扩散计算，提升了运算效率。（）",
@@ -5471,7 +5471,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 8,
+  "id": 264,
   "chapter": "第五章",
   "type": "判断",
   "question": "Stable Diffusion WebUI支持文生图、图生图、局部重绘等功能。（）",
@@ -5479,7 +5479,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 9,
+  "id": 265,
   "chapter": "第五章",
   "type": "判断",
   "question": "liblibAI平台的免费用户也可无限制使用所有AI绘画模型。（）",
@@ -5487,7 +5487,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 10,
+  "id": 266,
   "chapter": "第五章",
   "type": "判断",
   "question": "Checkpoint模型可以直接在不同版本的Stable Diffusion中通用。（）",
@@ -5495,7 +5495,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 11,
+  "id": 267,
   "chapter": "第五章",
   "type": "判断",
   "question": "AI绘画提示词中使用逗号分隔不同元素，可以明确元素之间的关系。（）",
@@ -5503,7 +5503,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 12,
+  "id": 268,
   "chapter": "第五章",
   "type": "判断",
   "question": "麦橘写实是经典的LoRA插件模型，体积小巧。（）",
@@ -5511,7 +5511,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 13,
+  "id": 269,
   "chapter": "第五章",
   "type": "判断",
   "question": "声音的音调由频率决定，频率越高，音调越高。（）",
@@ -5519,7 +5519,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 14,
+  "id": 270,
   "chapter": "第五章",
   "type": "判断",
   "question": "奈奎斯特采样定理要求采样频率至少是信号最高频率的2倍。（）",
@@ -5527,7 +5527,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 15,
+  "id": 271,
   "chapter": "第五章",
   "type": "判断",
   "question": "现代神经网络TTS通常需要先将文本转换为梅尔频谱，再生成语音波形。（）",
@@ -5535,7 +5535,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 16,
+  "id": 272,
   "chapter": "第五章",
   "type": "判断",
   "question": "语音克隆技术只需少量音频样本（如5分钟内）即可复制特定人的声音。（）",
@@ -5543,7 +5543,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 17,
+  "id": 273,
   "chapter": "第五章",
   "type": "判断",
   "question": "音频的采样位数越高，声音的动态范围越大，音质越好。（）",
@@ -5551,7 +5551,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 1,
+  "id": 274,
   "chapter": "第六章",
   "type": "单选",
   "question": "传统软件时代解决任务的核心特征是（）。",
@@ -5576,7 +5576,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 2,
+  "id": 275,
   "chapter": "第六章",
   "type": "单选",
   "question": "大模型时代的AI被形容为“懂很多的旁观者”，其核心局限是（）。",
@@ -5601,7 +5601,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 3,
+  "id": 276,
   "chapter": "第六章",
   "type": "单选",
   "question": "AlphaGo是哪种智能体范式的代表（）。",
@@ -5626,7 +5626,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 4,
+  "id": 277,
   "chapter": "第六章",
   "type": "单选",
   "question": "智能体构建通用流程的第一步是（）。",
@@ -5651,7 +5651,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 5,
+  "id": 278,
   "chapter": "第六章",
   "type": "单选",
   "question": "智能客服相比传统聊天机器人的核心优势是（）。",
@@ -5676,7 +5676,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 6,
+  "id": 279,
   "chapter": "第六章",
   "type": "单选",
   "question": "未来智能体发展的重要趋势是（）。",
@@ -5701,7 +5701,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 7,
+  "id": 280,
   "chapter": "第六章",
   "type": "单选",
   "question": "AI智能体实现“感知-思考-行动”闭环的核心新增组件是（）。",
@@ -5726,7 +5726,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 8,
+  "id": 281,
   "chapter": "第六章",
   "type": "单选",
   "question": "Stuart Russell和Peter Norvig对智能体的经典定义中，智能体感知环境的工具是（）。",
@@ -5751,7 +5751,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 9,
+  "id": 282,
   "chapter": "第六章",
   "type": "单选",
   "question": "智能体核心架构公式“Agent=大脑（LLM）+规划（Planning）+记忆（Memory）+工具（Tools）”中，作为“大脑”的是（）。",
@@ -5776,7 +5776,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 10,
+  "id": 283,
   "chapter": "第六章",
   "type": "单选",
   "question": "恒温器、自动巡航系统属于哪种智能体范式（）。",
@@ -5801,7 +5801,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 11,
+  "id": 284,
   "chapter": "第六章",
   "type": "单选",
   "question": "在智能体构建中，将大任务拆解为多个子步骤的工作属于（）。",
@@ -5826,7 +5826,7 @@ const QS_AI = [
   "answer": "A"
  },
  {
-  "id": 12,
+  "id": 285,
   "chapter": "第六章",
   "type": "单选",
   "question": "AI智能体目前最核心的技术局限是（）。",
@@ -5851,7 +5851,7 @@ const QS_AI = [
   "answer": "B"
  },
  {
-  "id": 13,
+  "id": 286,
   "chapter": "第六章",
   "type": "单选",
   "question": "最早的智能体形态是（）。",
@@ -5876,7 +5876,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 14,
+  "id": 287,
   "chapter": "第六章",
   "type": "单选",
   "question": "以下哪类智能体具备零样本学习能力，能处理开放域非结构化任务（）。",
@@ -5901,7 +5901,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 15,
+  "id": 288,
   "chapter": "第六章",
   "type": "单选",
   "question": "智能体在科学探索领域的应用中，实现“干湿闭环”的核心是（）。",
@@ -5926,7 +5926,7 @@ const QS_AI = [
   "answer": "C"
  },
  {
-  "id": 1,
+  "id": 289,
   "chapter": "第六章",
   "type": "多选",
   "question": "根据 Stuart Russell 和 Peter Norvig 的定义，智能体的核心要素包括（）。",
@@ -5951,7 +5951,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 2,
+  "id": 290,
   "chapter": "第六章",
   "type": "多选",
   "question": "AI 智能体的核心架构包含以下哪些部分（）。",
@@ -5976,7 +5976,7 @@ const QS_AI = [
   "answer": "ABCD"
  },
  {
-  "id": 3,
+  "id": 291,
   "chapter": "第六章",
   "type": "多选",
   "question": "以下属于基于大语言模型的智能体核心优势的是（）。",
@@ -5998,10 +5998,10 @@ const QS_AI = [
     "text": "零样本学习能力"
    }
   ],
-  "answer": "ABDE"
+  "answer": "ABD"
  },
  {
-  "id": 4,
+  "id": 292,
   "chapter": "第六章",
   "type": "多选",
   "question": "智能体构建的通用流程包含以下哪些步骤（）。",
@@ -6023,10 +6023,10 @@ const QS_AI = [
     "text": "测试"
    }
   ],
-  "answer": "ABCDE"
+  "answer": "ABCD"
  },
  {
-  "id": 5,
+  "id": 293,
   "chapter": "第六章",
   "type": "多选",
   "question": "智能体在商业与业务自动化领域的应用场景包括（）。",
@@ -6048,10 +6048,10 @@ const QS_AI = [
     "text": "智能化库存管理"
    }
   ],
-  "answer": "ABDE"
+  "answer": "ABD"
  },
  {
-  "id": 1,
+  "id": 294,
   "chapter": "第六章",
   "type": "判断",
   "question": "控制论智能体具备灵活的环境适应能力，能处理未知的复杂变化。",
@@ -6059,7 +6059,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 2,
+  "id": 295,
   "chapter": "第六章",
   "type": "判断",
   "question": "强化学习智能体的训练成本低，能轻松泛化到开放世界的任务中。",
@@ -6067,7 +6067,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 3,
+  "id": 296,
   "chapter": "第六章",
   "type": "判断",
   "question": "LangChain和Coze都是面向专业开发者的代码优先开发平台。",
@@ -6075,7 +6075,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 4,
+  "id": 297,
   "chapter": "第六章",
   "type": "判断",
   "question": "智能体的记忆模块主要作用是保障对话的上下文连贯与经验积累。",
@@ -6083,7 +6083,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 5,
+  "id": 298,
   "chapter": "第六章",
   "type": "判断",
   "question": "RAG技术的作用是增强智能体的逻辑推理能力，提升其规划效率。",
@@ -6091,7 +6091,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 6,
+  "id": 299,
   "chapter": "第六章",
   "type": "判断",
   "question": "未来智能体发展的核心方向是人机深度协作，而非完全替代人类。",
@@ -6099,7 +6099,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 7,
+  "id": 300,
   "chapter": "第六章",
   "type": "判断",
   "question": "智能体时代的核心是实现从“被动提供信息”到“主动交付结果”的变革。",
@@ -6107,7 +6107,7 @@ const QS_AI = [
   "answer": "对"
  },
  {
-  "id": 8,
+  "id": 301,
   "chapter": "第六章",
   "type": "判断",
   "question": "智能文档的核心价值是通过关键词搜索快速定位文档信息。",
@@ -6115,7 +6115,7 @@ const QS_AI = [
   "answer": "错"
  },
  {
-  "id": 9,
+  "id": 302,
   "chapter": "第六章",
   "type": "判断",
   "question": "智能体的“提示词注入”风险属于隐私泄露风险的一种。",
