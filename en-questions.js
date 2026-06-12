@@ -1313,7 +1313,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "at"},
       {"label": "B", "text": "in"},
       {"label": "C", "text": "on"}
-    ],
+    ,
+      {"label": "D", "text": "to"}],
     "answer": "B"
   },
   {
@@ -1325,7 +1326,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "like"},
       {"label": "B", "text": "as"},
       {"label": "C", "text": "the same as"}
-    ],
+    ,
+      {"label": "D", "text": "for"}],
     "answer": "B"
   },
   {
@@ -1337,7 +1339,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "showed"},
       {"label": "B", "text": "show"},
       {"label": "C", "text": "shows"}
-    ],
+    ,
+      {"label": "D", "text": "showing"}],
     "answer": "C"
   },
   {
@@ -1349,7 +1352,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "around"},
       {"label": "B", "text": "at"},
       {"label": "C", "text": "on"}
-    ],
+    ,
+      {"label": "D", "text": "in"}],
     "answer": "A"
   },
   {
@@ -1361,7 +1365,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "so"},
       {"label": "B", "text": "and"},
       {"label": "C", "text": "but"}
-    ],
+    ,
+      {"label": "D", "text": "or"}],
     "answer": "C"
   },
   {
@@ -1373,7 +1378,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "at"},
       {"label": "B", "text": "in"},
       {"label": "C", "text": "to"}
-    ],
+    ,
+      {"label": "D", "text": "on"}],
     "answer": "A"
   },
   {
@@ -1385,7 +1391,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "love"},
       {"label": "B", "text": "am loving"},
       {"label": "C", "text": "loved"}
-    ],
+    ,
+      {"label": "D", "text": "loving"}],
     "answer": "A"
   },
   {
@@ -1397,7 +1404,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "meet"},
       {"label": "B", "text": "will meet"},
       {"label": "C", "text": "met"}
-    ],
+    ,
+      {"label": "D", "text": "have met"}],
     "answer": "A"
   },
   {
@@ -1409,7 +1417,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "And"},
       {"label": "B", "text": "So"},
       {"label": "C", "text": "But"}
-    ],
+    ,
+      {"label": "D", "text": "Or"}],
     "answer": "C"
   },
   {
@@ -1421,7 +1430,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "rain"},
       {"label": "B", "text": "rains"},
       {"label": "C", "text": "will rain"}
-    ],
+    ,
+      {"label": "D", "text": "rained"}],
     "answer": "B"
   },
 
@@ -1435,7 +1445,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "This"},
       {"label": "B", "text": "These"},
       {"label": "C", "text": "It"}
-    ],
+    ,
+      {"label": "D", "text": "There"}],
     "answer": "C"
   },
   {
@@ -1447,7 +1458,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "come"},
       {"label": "B", "text": "comes"},
       {"label": "C", "text": "will come"}
-    ],
+    ,
+      {"label": "D", "text": "came"}],
     "answer": "A"
   },
   {
@@ -1459,7 +1471,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "on"},
       {"label": "B", "text": "in"},
       {"label": "C", "text": "by"}
-    ],
+    ,
+      {"label": "D", "text": "with"}],
     "answer": "C"
   },
   {
@@ -1471,7 +1484,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "on"},
       {"label": "B", "text": "in"},
       {"label": "C", "text": "at"}
-    ],
+    ,
+      {"label": "D", "text": "by"}],
     "answer": "A"
   },
   {
@@ -1483,7 +1497,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "is"},
       {"label": "B", "text": "was"},
       {"label": "C", "text": "would be"}
-    ],
+    ,
+      {"label": "D", "text": "had been"}],
     "answer": "B"
   },
   {
@@ -1495,7 +1510,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "and"},
       {"label": "B", "text": "but"},
       {"label": "C", "text": "so"}
-    ],
+    ,
+      {"label": "D", "text": "or"}],
     "answer": "C"
   },
   {
@@ -1507,7 +1523,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "videos"},
       {"label": "B", "text": "video"},
       {"label": "C", "text": "videoes"}
-    ],
+    ,
+      {"label": "D", "text": "films"}],
     "answer": "A"
   },
   {
@@ -1519,7 +1536,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "going"},
       {"label": "B", "text": "go"},
       {"label": "C", "text": "to go"}
-    ],
+    ,
+      {"label": "D", "text": "to going"}],
     "answer": "C"
   },
   {
@@ -1531,7 +1549,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "have"},
       {"label": "B", "text": "has"},
       {"label": "C", "text": "had"}
-    ],
+    ,
+      {"label": "D", "text": "were having"}],
     "answer": "C"
   },
   {
@@ -1543,7 +1562,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "someway"},
       {"label": "B", "text": "anyway"},
       {"label": "C", "text": "sometimes"}
-    ],
+    ,
+      {"label": "D", "text": "however"}],
     "answer": "B"
   },
 
@@ -1557,7 +1577,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "on"},
       {"label": "B", "text": "at"},
       {"label": "C", "text": "to"}
-    ],
+    ,
+      {"label": "D", "text": "from"}],
     "answer": "A"
   },
   {
@@ -1569,7 +1590,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "without"},
       {"label": "B", "text": "with"},
       {"label": "C", "text": "while"}
-    ],
+    ,
+      {"label": "D", "text": "before"}],
     "answer": "A"
   },
   {
@@ -1581,7 +1603,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "looking"},
       {"label": "B", "text": "look"},
       {"label": "C", "text": "to look"}
-    ],
+    ,
+      {"label": "D", "text": "looked"}],
     "answer": "C"
   },
   {
@@ -1593,7 +1616,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "looking"},
       {"label": "B", "text": "look"},
       {"label": "C", "text": "to look"}
-    ],
+    ,
+      {"label": "D", "text": "looked"}],
     "answer": "A"
   },
   {
@@ -1605,7 +1629,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "possibly"},
       {"label": "B", "text": "possible"},
       {"label": "C", "text": "impossible"}
-    ],
+    ,
+      {"label": "D", "text": "impossibly"}],
     "answer": "B"
   },
   {
@@ -1617,7 +1642,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "near"},
       {"label": "B", "text": "near by"},
       {"label": "C", "text": "nearby"}
-    ],
+    ,
+      {"label": "D", "text": "close"}],
     "answer": "C"
   },
   {
@@ -1629,7 +1655,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "always"},
       {"label": "B", "text": "seldom"},
       {"label": "C", "text": "never"}
-    ],
+    ,
+      {"label": "D", "text": "sometimes"}],
     "answer": "C"
   },
   {
@@ -1641,7 +1668,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "Get"},
       {"label": "B", "text": "Have"},
       {"label": "C", "text": "Take"}
-    ],
+    ,
+      {"label": "D", "text": "Make"}],
     "answer": "C"
   },
   {
@@ -1653,7 +1681,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "until"},
       {"label": "B", "text": "when"},
       {"label": "C", "text": "after"}
-    ],
+    ,
+      {"label": "D", "text": "unless"}],
     "answer": "A"
   },
   {
@@ -1665,7 +1694,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "while"},
       {"label": "B", "text": "before"},
       {"label": "C", "text": "after"}
-    ],
+    ,
+      {"label": "D", "text": "after"}],
     "answer": "B"
   },
 
@@ -1679,7 +1709,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "on"},
       {"label": "B", "text": "at"},
       {"label": "C", "text": "in"}
-    ],
+    ,
+      {"label": "D", "text": "near"}],
     "answer": "C"
   },
   {
@@ -1691,7 +1722,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "here"},
       {"label": "B", "text": "there"},
       {"label": "C", "text": "where"}
-    ],
+    ,
+      {"label": "D", "text": "now"}],
     "answer": "A"
   },
   {
@@ -1703,7 +1735,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "freezing"},
       {"label": "B", "text": "frozen"},
       {"label": "C", "text": "freeze"}
-    ],
+    ,
+      {"label": "D", "text": "cold"}],
     "answer": "A"
   },
   {
@@ -1715,7 +1748,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "dropping"},
       {"label": "B", "text": "dropped"},
       {"label": "C", "text": "to drop"}
-    ],
+    ,
+      {"label": "D", "text": "falling"}],
     "answer": "A"
   },
   {
@@ -1727,7 +1761,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "what"},
       {"label": "B", "text": "that"},
       {"label": "C", "text": "which"}
-    ],
+    ,
+      {"label": "D", "text": "when"}],
     "answer": "B"
   },
   {
@@ -1739,7 +1774,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "a lot"},
       {"label": "B", "text": "lot"},
       {"label": "C", "text": "a few"}
-    ],
+    ,
+      {"label": "D", "text": "much"}],
     "answer": "A"
   },
   {
@@ -1751,7 +1787,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "in"},
       {"label": "B", "text": "to"},
       {"label": "C", "text": "by"}
-    ],
+    ,
+      {"label": "D", "text": "until"}],
     "answer": "B"
   },
   {
@@ -1763,7 +1800,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "in"},
       {"label": "B", "text": "for"},
       {"label": "C", "text": "with"}
-    ],
+    ,
+      {"label": "D", "text": "about"}],
     "answer": "C"
   },
   {
@@ -1775,7 +1813,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "especially"},
       {"label": "B", "text": "specially"},
       {"label": "C", "text": "especial"}
-    ],
+    ,
+      {"label": "D", "text": "particularly"}],
     "answer": "A"
   },
   {
@@ -1787,7 +1826,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "on"},
       {"label": "B", "text": "in"},
       {"label": "C", "text": "at"}
-    ],
+    ,
+      {"label": "D", "text": "during"}],
     "answer": "A"
   },
 
@@ -1801,7 +1841,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "is"},
       {"label": "B", "text": "was"},
       {"label": "C", "text": "were"}
-    ],
+    ,
+      {"label": "D", "text": "has been"}],
     "answer": "B"
   },
   {
@@ -1813,7 +1854,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "an"},
       {"label": "B", "text": "a"},
       {"label": "C", "text": "the"}
-    ],
+    ,
+      {"label": "D", "text": "one"}],
     "answer": "A"
   },
   {
@@ -1825,7 +1867,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "take"},
       {"label": "B", "text": "do"},
       {"label": "C", "text": "play"}
-    ],
+    ,
+      {"label": "D", "text": "act"}],
     "answer": "C"
   },
   {
@@ -1837,7 +1880,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "of"},
       {"label": "B", "text": "in"},
       {"label": "C", "text": "for"}
-    ],
+    ,
+      {"label": "D", "text": "about"}],
     "answer": "A"
   },
   {
@@ -1849,7 +1893,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "make"},
       {"label": "B", "text": "have made"},
       {"label": "C", "text": "has made"}
-    ],
+    ,
+      {"label": "D", "text": "made"}],
     "answer": "C"
   },
   {
@@ -1861,7 +1906,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "love"},
       {"label": "B", "text": "loves"},
       {"label": "C", "text": "is loving"}
-    ],
+    ,
+      {"label": "D", "text": "loved"}],
     "answer": "B"
   },
   {
@@ -1873,7 +1919,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "support"},
       {"label": "B", "text": "to support"},
       {"label": "C", "text": "supporting"}
-    ],
+    ,
+      {"label": "D", "text": "supported"}],
     "answer": "C"
   },
   {
@@ -1885,7 +1932,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "On"},
       {"label": "B", "text": "In"},
       {"label": "C", "text": "At"}
-    ],
+    ,
+      {"label": "D", "text": "For"}],
     "answer": "C"
   },
   {
@@ -1897,7 +1945,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "is going to continue"},
       {"label": "B", "text": "continues"},
       {"label": "C", "text": "is continuing"}
-    ],
+    ,
+      {"label": "D", "text": "will continue"}],
     "answer": "A"
   },
   {
@@ -1909,7 +1958,8 @@ const EN_QUESTIONS = [
       {"label": "A", "text": "such"},
       {"label": "B", "text": "as"},
       {"label": "C", "text": "like"}
-    ],
+    ,
+      {"label": "D", "text": "than"}],
     "answer": "B"
   },
 
