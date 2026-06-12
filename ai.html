@@ -399,8 +399,8 @@ function showNextButton(qid, correct) {
       setTimeout(() => {
         if (nbtn.parentNode) {
           currentIndex++;
-          if (examMode && currentIndex >= questions.length) {
-            finishExam();
+          if (currentIndex >= questions.length) {
+            if (examMode) finishExam(); else showFinishScreen();
           } else {
             render();
           }
@@ -420,14 +420,7 @@ function showNextButton(qid, correct) {
       nbtn.onclick = finishExam;
       card.appendChild(nbtn);
     } else {
-      const nbtn = document.createElement('button');
-      nbtn.className = 'q-btn next';
-      nbtn.textContent = wrongMode ? '🎉 错题已刷完' : '🎉 全部完成！';
-      nbtn.onclick = () => {
-        if (wrongMode) { wrongMode = false; document.getElementById('wb-btn').classList.remove('active'); }
-        loadQuestions();
-      };
-      card.appendChild(nbtn);
+      card.appendChild(createCompleteButtons(wrongMode));
     }
   }
 }
@@ -482,7 +475,10 @@ function finishExam() {
   });
 
   html += '</div>';
-  html += `<button class="q-btn return-btn" onclick="backToShuati()" style="margin-top:14px;">⬅ 返回刷题模式</button>`;
+  html += `<div style="display:flex;gap:8px;margin-top:14px;">
+    <button class="q-btn return-btn" onclick="restartCurrentMode()" style="flex:1;">🔄 重新考试</button>
+    <button class="q-btn return-btn" onclick="backToShuati()" style="flex:1;background:#4A90D9;">⬅ 返回刷题</button>
+  </div>`;
 
   area.innerHTML = html;
 }
@@ -490,6 +486,56 @@ function finishExam() {
 function toggleExamDetail(i) {
   const el = document.getElementById('exam-detail-' + i);
   if (el) el.style.display = el.style.display === 'none' ? 'block' : 'none';
+}
+
+function createCompleteButtons(isWrong) {
+  const wrap = document.createElement('div');
+  wrap.style.display = 'flex';
+  wrap.style.gap = '8px';
+  wrap.style.marginTop = '11px';
+
+  const restartBtn = document.createElement('button');
+  restartBtn.className = 'q-btn next';
+  restartBtn.style.flex = '1';
+  restartBtn.textContent = '🔄 重新开始';
+  restartBtn.onclick = () => { if (isWrong) { wrongMode = false; document.getElementById('wb-btn').classList.remove('active'); } loadQuestions(); };
+
+  const backBtn = document.createElement('button');
+  backBtn.className = 'q-btn return-btn';
+  backBtn.style.flex = '1';
+  backBtn.textContent = isWrong ? '🎉 错题已刷完' : '🎉 全部完成';
+  backBtn.onclick = () => { if (isWrong) { wrongMode = false; document.getElementById('wb-btn').classList.remove('active'); } backToShuati(); };
+
+  wrap.appendChild(restartBtn);
+  wrap.appendChild(backBtn);
+  return wrap;
+}
+
+function restartCurrentMode() {
+  loadQuestions();
+}
+
+function showFinishScreen(isWrong) {
+  const area = document.getElementById('question-area');
+  const stats = document.getElementById('header-stats');
+  const total = QS.length;
+  const done = wrongIds.length;
+  stats.textContent = `共${total}题 | 错题${done}题`;
+  document.getElementById('progress-fill').style.width = '100%';
+  document.getElementById('chapter-filter').disabled = false;
+
+  const wm = isWrong || wrongMode;
+  const msg = wm ? '🎉 错题已刷完！' : '🎉 全部完成！';
+
+  area.innerHTML = `
+    <div class="score-card" style="background:linear-gradient(135deg,#27ae60,#2ecc71);">
+      <div class="score-num">✓</div>
+      <div class="score-label">${msg}</div>
+    </div>
+  `;
+
+  const wrap = createCompleteButtons(wm);
+  area.appendChild(wrap);
 }
 
 function backToShuati() {
