@@ -128,6 +128,10 @@ function loadQuestions() {
   passageChapters.forEach(ch => {
     let block = readingPool.filter(q => q.chapter === ch).map((q, idx) => {
       const cloned = JSON.parse(JSON.stringify(q));
+      cloned.options = [
+        { label: '对', text: '正确' },
+        { label: '错', text: '错误' }
+      ];
       cloned._readingPassage = ch;
       cloned._readingPassageId = ch;
       cloned._readingPassageIndex = idx + 1;
