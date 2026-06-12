@@ -174,8 +174,7 @@ function generateExam() {
     }
   });
 
-  // Shuffle blocks (passage blocks stay together), then flatten
-  shuffle(allBlocks);
+  // 按类型分组排列（词汇语法→完形填空→阅读理解→句子翻译），不混排
   questions = allBlocks.flat();
 
   if (questions.length === 0) {
