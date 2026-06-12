@@ -118,8 +118,29 @@ function loadQuestions() {
   const ch = document.getElementById('chapter-filter').value;
   if(ch) pool = pool.filter(q=>q.chapter===ch);
   if(wrongMode) pool = pool.filter(q=>wrongIds.includes(q.id));
-  questions = [...pool];
-  shuffle(questions);
+
+  // 刷题模式：将阅读理解按篇章分组，每篇5题一页
+  let blocks = [];
+  let readingPool = pool.filter(q => q.chapter && q.chapter.startsWith('阅读理解'));
+  let otherPool = pool.filter(q => !q.chapter || !q.chapter.startsWith('阅读理解'));
+
+  const passageChapters = [...new Set(readingPool.map(q => q.chapter))].filter(Boolean);
+  passageChapters.forEach(ch => {
+    let block = readingPool.filter(q => q.chapter === ch).map((q, idx) => {
+      const cloned = JSON.parse(JSON.stringify(q));
+      cloned._readingPassage = ch;
+      cloned._readingPassageId = ch;
+      cloned._readingPassageIndex = idx + 1;
+      return cloned;
+    });
+    if (block.length > 0) blocks.push(block);
+  });
+  // 非阅读题：每道题独立成块
+  otherPool.forEach(q => blocks.push([q]));
+  // 打乱块顺序（阅读篇章保持内部连续）
+  shuffle(blocks);
+  questions = blocks.flat();
+
   currentIndex = 0;
   render();
 }
@@ -263,8 +284,8 @@ function render() {
 
   const q = questions[currentIndex];
 
-  // Reading passage: render all 5 questions in one card
-  if (q._readingPassageId && examMode) {
+  // Reading passage: render all 5 questions in one card (both exam & practice mode)
+  if (q._readingPassageId) {
     let pq = [];
     let endIdx = currentIndex;
     for (let i = currentIndex; i < questions.length; i++) {
@@ -326,20 +347,28 @@ function renderReadingPassage(pq, startIdx, endIdx) {
   const pct = ((endIdx + 1) / totalQ * 100).toFixed(1);
   document.getElementById('progress-fill').style.width = pct + '%';
 
-  const passageScore = pq.reduce((s, q) => s + (q._examScore || 0), 0);
-  const wrongCnt = examAnswers.filter(a => !a.correct).length;
-  const curScore = examAnswers.reduce((s, a) => s + (a.correct ? a.score : 0), 0);
-  const maxScore = questions.reduce((s, q) => s + (q._examScore || 0), 0);
-  document.getElementById('header-stats').textContent = `考试中 ${endIdx+1}/${totalQ}题 · ❌${wrongCnt}错 · 📊${curScore}/${maxScore}分`;
-
   window._passageEndIdx = endIdx;
+
+  const stats = document.getElementById('header-stats');
+  const total = QS.length;
+  const done = wrongIds.length;
+
+  if (examMode) {
+    const passageScore = pq.reduce((s, q) => s + (q._examScore || 0), 0);
+    const wrongCnt = examAnswers.filter(a => !a.correct).length;
+    const curScore = examAnswers.reduce((s, a) => s + (a.correct ? a.score : 0), 0);
+    const maxScore = questions.reduce((s, q) => s + (q._examScore || 0), 0);
+    stats.textContent = `考试中 ${endIdx+1}/${totalQ}题 · ❌${wrongCnt}错 · 📊${curScore}/${maxScore}分`;
+  } else {
+    stats.textContent = `共${total}题 | 错题${done}题`;
+  }
 
   let html = `<div class="q-card" id="qcard-passage-${pq[0].id}">
     <div class="q-meta">
-      📋 第 ${startIdx+1}-${endIdx+1}/${totalQ} 题
-      <span id="exam-timer" class="exam-timer">⏱ ${EXAM_CONFIG.timeMinutes}:00</span>
+      ${examMode ? '📋 第' : '📖 阅读'} ${startIdx+1}-${endIdx+1}/${totalQ} 题
+      ${examMode ? `<span id="exam-timer" class="exam-timer">⏱ ${EXAM_CONFIG.timeMinutes}:00</span>` : ''}
     </div>
-    <div class="q-text">📖 ${pq[0]._examLabel} — ${pq[0]._readingPassage}（第 ${startIdx+1}-${endIdx+1} 题，共 ${passageScore} 分）</div>`;
+    <div class="q-text">📖 ${pq[0]._readingPassage || '阅读理解'}</div>`;
 
   pq.forEach((q, i) => {
     html += `<div style="margin-top:14px;padding-top:12px;border-top:1px solid #eee;">
@@ -420,8 +449,9 @@ function submitReadingPassage(firstQid) {
       setTimeout(() => {
         if (nbtn.parentNode) {
           currentIndex = passageEndIdx + 1;
-          if (currentIndex >= questions.length) finishExam();
-          else render();
+          if (currentIndex >= questions.length) {
+            if (examMode) finishExam(); else backToShuati();
+          } else render();
         }
       }, 3000);
     } else {
@@ -433,14 +463,20 @@ function submitReadingPassage(firstQid) {
   } else {
     if (allCorrect) {
       nbtn.className = 'q-btn next-auto';
-      nbtn.textContent = '⏳ 正确！3秒后查看结果...';
+      const endText = examMode ? '查看考试结果' : '返回刷题';
+      nbtn.textContent = `⏳ 正确！3秒后${endText}...`;
       nbtn.disabled = true;
       card.appendChild(nbtn);
-      setTimeout(() => { if (nbtn.parentNode) finishExam(); }, 3000);
+      setTimeout(() => {
+        if (nbtn.parentNode) {
+          if (examMode) finishExam(); else backToShuati();
+        }
+      }, 3000);
     } else {
+      const endText = examMode ? '📊 查看考试结果' : '🎉 全部完成！';
       nbtn.className = 'q-btn return-btn';
-      nbtn.textContent = '📊 查看考试结果';
-      nbtn.onclick = finishExam;
+      nbtn.textContent = endText;
+      nbtn.onclick = examMode ? finishExam : backToShuati;
       card.appendChild(nbtn);
     }
   }
@@ -450,7 +486,7 @@ function submitAnswer(qid) {
   const q = questions[currentIndex];
   if (!q) return;
   // Route reading passage questions to bulk submit
-  if (q._readingPassageId && examMode) {
+  if (q._readingPassageId) {
     submitReadingPassage(qid);
     return;
   }
@@ -503,8 +539,8 @@ function submitAnswer(qid) {
       setTimeout(() => {
         if (nbtn.parentNode) {
           currentIndex++;
-          if (examMode && currentIndex >= questions.length) {
-            finishExam();
+          if (currentIndex >= questions.length) {
+            if (examMode) finishExam(); else backToShuati();
           } else {
             render();
           }
@@ -528,7 +564,7 @@ function submitAnswer(qid) {
       nbtn.textContent = wrongMode ? '🎉 错题已刷完' : '🎉 全部完成！';
       nbtn.onclick = () => {
         if (wrongMode) { wrongMode = false; document.getElementById('wb-btn').classList.remove('active'); }
-        loadQuestions();
+        backToShuati();
       };
       card.appendChild(nbtn);
     }
