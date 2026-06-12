@@ -2814,7 +2814,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Are they from America?"},
       {"label": "B", "text": "Do they from America?"}
-    ],
+    ,
+      {"label": "C", "text": "Are they come from America?"},
+      {"label": "D", "text": "They come from America?"}],
     "answer": "A"
   },
   {
@@ -2825,7 +2827,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Is his girlfriend live in Poland?"},
       {"label": "B", "text": "Is his girlfriend living in Poland?"}
-    ],
+    ,
+      {"label": "C", "text": "Does his girlfriend live in Poland?"},
+      {"label": "D", "text": "Is his girlfriend live in Poland?"}],
     "answer": "B"
   },
   {
@@ -2836,7 +2840,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Where do you work?"},
       {"label": "B", "text": "Where does you work?"}
-    ],
+    ,
+      {"label": "C", "text": "Where are you work?"},
+      {"label": "D", "text": "Where you work?"}],
     "answer": "A"
   },
   {
@@ -2847,7 +2853,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "I am a teacher, I teach Chinese."},
       {"label": "B", "text": "I am a teacher. I teach Chinese."}
-    ],
+    ,
+      {"label": "C", "text": "I'm a teacher and I teach Chinese."},
+      {"label": "D", "text": "I am a teacher, I am teaching Chinese."}],
     "answer": "B"
   },
   {
@@ -2858,7 +2866,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "These children like to live in the city."},
       {"label": "B", "text": "These childs like living in the city."}
-    ],
+    ,
+      {"label": "C", "text": "These children like living in the city."},
+      {"label": "D", "text": "These children enjoy to live in the city."}],
     "answer": "A"
   },
   {
@@ -2869,7 +2879,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Does Sam often come to see you?"},
       {"label": "B", "text": "Does Sam often come see you?"}
-    ],
+    ,
+      {"label": "C", "text": "Is Sam often come to see you?"},
+      {"label": "D", "text": "Does Sam often comes to see you?"}],
     "answer": "A"
   },
   {
@@ -2880,7 +2892,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Do Bea and Lucy study at the same school?"},
       {"label": "B", "text": "Do Bea and Lucy read the same books at school?"}
-    ],
+    ,
+      {"label": "C", "text": "Do Bea and Lucy study at same school?"},
+      {"label": "D", "text": "Are Bea and Lucy studying in the same school?"}],
     "answer": "A"
   },
   {
@@ -2891,7 +2905,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "She thinks helping others is the most perfect job."},
       {"label": "B", "text": "She thinks helping others is a perfect job."}
-    ],
+    ,
+      {"label": "C", "text": "She thinks to help others is a perfect job."},
+      {"label": "D", "text": "She thinks help others is the most perfect job."}],
     "answer": "B"
   },
   {
@@ -2902,7 +2918,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Lucy's work is a tourist guide."},
       {"label": "B", "text": "Lucy works as a tourist guide."}
-    ],
+    ,
+      {"label": "C", "text": "Lucy's job is a guide."},
+      {"label": "D", "text": "Lucy's work is guide."}],
     "answer": "B"
   },
   {
@@ -2913,7 +2931,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Does your hometown got a cinema?"},
       {"label": "B", "text": "Is there any cinema in your hometown?"}
-    ],
+    ,
+      {"label": "C", "text": "Is there any cinema in your hometown?"},
+      {"label": "D", "text": "Does your hometown have any cinema?"}],
     "answer": "B"
   },
   {
@@ -2924,7 +2944,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "There is not a train station here."},
       {"label": "B", "text": "Here is no train station."}
-    ],
+    ,
+      {"label": "C", "text": "Here has no train station."},
+      {"label": "D", "text": "There is no any train station here."}],
     "answer": "A"
   },
   {
@@ -2935,7 +2957,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "There is a sofa and an armchair in the living room."},
       {"label": "B", "text": "There are a sofa and an armchair in the living room."}
-    ],
+    ,
+      {"label": "C", "text": "There have a sofa and an armchair in the living room."},
+      {"label": "D", "text": "In the living room has a sofa and an armchair."}],
     "answer": "A"
   },
   {
@@ -2946,7 +2970,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "—Where are you going? —I'm going to the supermarket."},
       {"label": "B", "text": "—Where are you going? —I'm going to go to the supermarket."}
-    ],
+    ,
+      {"label": "C", "text": "—Where are you going to? —I'm going to supermarket."},
+      {"label": "D", "text": "—Where you going? —I go to supermarket."}],
     "answer": "A"
   },
   {
@@ -2957,7 +2983,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Please find out when the train leaves."},
       {"label": "B", "text": "Please find out when will the train leave."}
-    ],
+    ,
+      {"label": "C", "text": "Please find out when is the train leaving."},
+      {"label": "D", "text": "Please check when does the train leave."}],
     "answer": "A"
   },
   {
@@ -2968,7 +2996,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "He has a very good collection of foreign coins."},
       {"label": "B", "text": "He has collected many foreign coin."}
-    ],
+    ,
+      {"label": "C", "text": "He collected many foreign coins."},
+      {"label": "D", "text": "He has a collection of many foreign coin."}],
     "answer": "A"
   },
   {
@@ -2979,7 +3009,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "How about going to the park?"},
       {"label": "B", "text": "How about go to the park?"}
-    ],
+    ,
+      {"label": "C", "text": "What about go to the park?"},
+      {"label": "D", "text": "How about to go to the park?"}],
     "answer": "A"
   },
   {
@@ -2990,7 +3022,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Can you lend me an umbrella?"},
       {"label": "B", "text": "Can you borrow me an umbrella?"}
-    ],
+    ,
+      {"label": "C", "text": "Can you lend an umbrella to me?"},
+      {"label": "D", "text": "Could you borrow me an umbrella?"}],
     "answer": "A"
   },
   {
@@ -3001,7 +3035,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Mary is wearing a swimming costume."},
       {"label": "B", "text": "Mary is putting on a swimming costume."}
-    ],
+    ,
+      {"label": "C", "text": "Mary is dressing a swimming costume."},
+      {"label": "D", "text": "Mary is having a swimming costume."}],
     "answer": "A"
   },
   {
@@ -3012,7 +3048,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "My father is flying to Beijing tomorrow morning."},
       {"label": "B", "text": "My father is going to fly to Beijing tomorrow morning."}
-    ],
+    ,
+      {"label": "C", "text": "My father will fly to Beijing tomorrow morning."},
+      {"label": "D", "text": "My father flies to Beijing tomorrow morning."}],
     "answer": "A"
   },
   {
@@ -3023,7 +3061,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "We passed the night playing cards and telling stories all night."},
       {"label": "B", "text": "We passed the night play cards, tell stories all night."}
-    ],
+    ,
+      {"label": "C", "text": "We passed the night by playing cards and telling stories."},
+      {"label": "D", "text": "We spent the night playing cards and telling stories."}],
     "answer": "A"
   },
   {
@@ -3034,7 +3074,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "My father met us at the railway station at about 7:30."},
       {"label": "B", "text": "My father received us at the railway station at about 7:30."}
-    ],
+    ,
+      {"label": "C", "text": "My father picked us up at the railway station at about 7:30."},
+      {"label": "D", "text": "My father waited us at the railway station at about 7:30."}],
     "answer": "A"
   },
   {
@@ -3045,7 +3087,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "I slept very late last night."},
       {"label": "B", "text": "I slept very late yesterday night."}
-    ],
+    ,
+      {"label": "C", "text": "I went to bed very late last night."},
+      {"label": "D", "text": "I slept late yesterday evening."}],
     "answer": "A"
   },
   {
@@ -3056,7 +3100,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Experience is the best teacher."},
       {"label": "B", "text": "Experience is the most good teacher."}
-    ],
+    ,
+      {"label": "C", "text": "Experience is best teacher."},
+      {"label": "D", "text": "The experience is the best teacher."}],
     "answer": "A"
   },
   {
@@ -3067,7 +3113,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "I never tell a lie."},
       {"label": "B", "text": "I have never told a lie."}
-    ],
+    ,
+      {"label": "C", "text": "I never tell lies."},
+      {"label": "D", "text": "I don't never tell a lie."}],
     "answer": "A"
   },
   {
@@ -3078,7 +3126,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Someone is knocking at the door."},
       {"label": "B", "text": "Someone is knocking the door."}
-    ],
+    ,
+      {"label": "C", "text": "There is someone knocking at the door."},
+      {"label": "D", "text": "Someone is knocking on the door."}],
     "answer": "A"
   },
   {
@@ -3089,7 +3139,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "I go home to visit my parents two or three times a year."},
       {"label": "B", "text": "I go home to visit my parents twice or three times a year."}
-    ],
+    ,
+      {"label": "C", "text": "I go home to see my parents two or three times a year."},
+      {"label": "D", "text": "I go home to visit my parents twice to three times a year."}],
     "answer": "A"
   },
   {
@@ -3100,7 +3152,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "The desk is against the wall."},
       {"label": "B", "text": "The desk is opposite the wall."}
-    ],
+    ,
+      {"label": "C", "text": "The desk is placed against the wall."},
+      {"label": "D", "text": "The desk leans against the wall."}],
     "answer": "A"
   },
   {
@@ -3111,7 +3165,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "You must not cross the road here."},
       {"label": "B", "text": "You need not cross the road here."}
-    ],
+    ,
+      {"label": "C", "text": "You mustn't cross the road here."},
+      {"label": "D", "text": "You are not allowed to cross the road here."}],
     "answer": "A"
   },
   {
@@ -3122,7 +3178,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Let's go there together!"},
       {"label": "B", "text": "Lets go there together!"}
-    ],
+    ,
+      {"label": "C", "text": "Let us go there together!"},
+      {"label": "D", "text": "Shall we go there together?"}],
     "answer": "A"
   },
   {
@@ -3133,7 +3191,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "After many years' hard work, they afforded to buy their own house and moved into it."},
       {"label": "B", "text": "After many years' hard work, they afforded to buy their own house, moved into it."}
-    ],
+    ,
+      {"label": "C", "text": "After working hard for many years, they bought their own house and moved in."},
+      {"label": "D", "text": "After many years hard working, they bought their own house and moved in."}],
     "answer": "A"
   },
   {
@@ -3144,7 +3204,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "You should not forget to say 'thank you'."},
       {"label": "B", "text": "You should not forget saying 'thank you'."}
-    ],
+    ,
+      {"label": "C", "text": "You should not forget to say thank you."},
+      {"label": "D", "text": "You shouldn't forget to say thanks."}],
     "answer": "A"
   },
   {
@@ -3155,7 +3217,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Should I tell him about it?"},
       {"label": "B", "text": "Must I tell him about it?"}
-    ],
+    ,
+      {"label": "C", "text": "Ought I to tell him about it?"},
+      {"label": "D", "text": "Should I be telling him about this?"}],
     "answer": "A"
   },
   {
@@ -3166,7 +3230,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "I have to get up very early in the morning every day."},
       {"label": "B", "text": "I must get up very early in the morning every day."}
-    ],
+    ,
+      {"label": "C", "text": "I need to get up very early every day."},
+      {"label": "D", "text": "I have got to get up very early every day."}],
     "answer": "A"
   },
   {
@@ -3177,7 +3243,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "You can't be so rude to other people."},
       {"label": "B", "text": "You are not able to be so rude to other people."}
-    ],
+    ,
+      {"label": "C", "text": "You must not be so rude to others."},
+      {"label": "D", "text": "You cannot be so rude to others."}],
     "answer": "A"
   },
   {
@@ -3188,7 +3256,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Do you want to drink a little milk?"},
       {"label": "B", "text": "Would you like a little milk?"}
-    ],
+    ,
+      {"label": "C", "text": "Do you want some milk?"},
+      {"label": "D", "text": "Would you like some milk to drink?"}],
     "answer": "B"
   },
   {
@@ -3199,7 +3269,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "She has got a sweet tooth and eats a few sweets every day."},
       {"label": "B", "text": "She loves eating sweets and eats a few sweets every day."}
-    ],
+    ,
+      {"label": "C", "text": "She has a sweet tooth and eats a few candies every day."},
+      {"label": "D", "text": "She likes sweets and eats a few candies every day."}],
     "answer": "A"
   },
   {
@@ -3210,7 +3282,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "You can try your best, but success is not guaranteed."},
       {"label": "B", "text": "You can try your best, however, success is not guaranteed."}
-    ],
+    ,
+      {"label": "C", "text": "You can do your best, but success is not guaranteed."},
+      {"label": "D", "text": "You can try your best, but do not guarantee success."}],
     "answer": "A"
   },
   {
@@ -3221,7 +3295,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Harry Potter is not a surprise winner at this year's Oscar Awards."},
       {"label": "B", "text": "Harry Potter becomes the biggest winner at this year's Oscar Awards, it is not a surprise."}
-    ],
+    ,
+      {"label": "C", "text": "It is no surprise that Harry Potter won this year's Oscar Awards."},
+      {"label": "D", "text": "Harry Potter is not a surprise that won this year's Oscar Awards."}],
     "answer": "A"
   },
   {
@@ -3232,7 +3308,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Margie isn't going to join our sports club."},
       {"label": "B", "text": "Margie isn't going to join up our sports club."}
-    ],
+    ,
+      {"label": "C", "text": "Margie is not going to take part in our sports club."},
+      {"label": "D", "text": "Margie won't join our sports club."}],
     "answer": "A"
   },
   {
@@ -3243,7 +3321,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Have you ever dreamed of becoming a scientist?"},
       {"label": "B", "text": "Do you ever dream of becoming a scientist?"}
-    ],
+    ,
+      {"label": "C", "text": "Did you ever dream of becoming a scientist?"},
+      {"label": "D", "text": "Have you ever dreamt to become a scientist?"}],
     "answer": "A"
   },
   {
@@ -3254,7 +3334,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "This pub serves meals as well as drinks."},
       {"label": "B", "text": "This pub supplies meals and drinks, too."}
-    ],
+    ,
+      {"label": "C", "text": "This pub serves not only drinks but also meals."},
+      {"label": "D", "text": "This pub offers meals as well as drinks."}],
     "answer": "A"
   },
   {
@@ -3265,7 +3347,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Have you ever been to Spain?"},
       {"label": "B", "text": "Did you go to Spain?"}
-    ],
+    ,
+      {"label": "C", "text": "Have you been to Spain?"},
+      {"label": "D", "text": "Did you ever go to Spain?"}],
     "answer": "A"
   },
   {
@@ -3276,7 +3360,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "She is popular with students."},
       {"label": "B", "text": "She is loved deeply by students."}
-    ],
+    ,
+      {"label": "C", "text": "She is loved by her students."},
+      {"label": "D", "text": "The students all like her."}],
     "answer": "A"
   },
   {
@@ -3287,7 +3373,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "The train arrived ten minutes ago."},
       {"label": "B", "text": "The train has arrived ten minutes ago."}
-    ],
+    ,
+      {"label": "C", "text": "The train arrived ten minutes before."},
+      {"label": "D", "text": "The train had arrived ten minutes ago."}],
     "answer": "A"
   },
   {
@@ -3298,7 +3386,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "They will only come if they are invited."},
       {"label": "B", "text": "They will come if only they are invited."}
-    ],
+    ,
+      {"label": "C", "text": "They only come if invited."},
+      {"label": "D", "text": "They will come if they are only invited."}],
     "answer": "A"
   },
   {
@@ -3309,7 +3399,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "We spend too much time learning words by heart."},
       {"label": "B", "text": "We waste too much time on learning words by heart."}
-    ],
+    ,
+      {"label": "C", "text": "We spend too much time reciting words."},
+      {"label": "D", "text": "We take too much time learning words by heart."}],
     "answer": "A"
   },
   {
@@ -3320,7 +3412,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "When I come across a new word, I often consult an English dictionary."},
       {"label": "B", "text": "When I come across a new word, I often check an English dictionary."}
-    ],
+    ,
+      {"label": "C", "text": "When meeting a new word, I often consult an English dictionary."},
+      {"label": "D", "text": "When I meet a new word, I often look up the English dictionary."}],
     "answer": "A"
   },
   {
@@ -3331,7 +3425,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "Did you sleep well last night?"},
       {"label": "B", "text": "Do you sleep well last night?"}
-    ],
+    ,
+      {"label": "C", "text": "Had you slept well last night?"},
+      {"label": "D", "text": "Were you sleep well last night?"}],
     "answer": "A"
   },
   {
@@ -3342,7 +3438,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "He was better known for his pen name than for his real name."},
       {"label": "B", "text": "As for his real name, his pen name was more known."}
-    ],
+    ,
+      {"label": "C", "text": "His pen name is more famous than his real name."},
+      {"label": "D", "text": "Compared with his real name, his pen name is more well-known."}],
     "answer": "A"
   },
   {
@@ -3353,7 +3451,9 @@ const EN_QUESTIONS = [
     "options": [
       {"label": "A", "text": "He did not work as a teacher in a university until he came back from abroad."},
       {"label": "B", "text": "He worked as a teacher in a university after he came back from abroad."}
-    ],
+    ,
+      {"label": "C", "text": "He returned from abroad and then worked as a teacher in a university."},
+      {"label": "D", "text": "After he came back from abroad, he became a teacher in a university."}],
     "answer": "A"
   }
 ];
