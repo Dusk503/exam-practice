@@ -144,9 +144,7 @@ function generateExam() {
     });
   });
 
-  // Re-shuffle all questions (so types are mixed)
-  shuffle(questions);
-  
+  // No re-shuffle — keep questions grouped by type (单选→多选→判断)
   if (questions.length === 0) {
     document.getElementById('question-area').innerHTML = '<div class="empty-state">❌ 无法生成试卷（题库不足）</div>';
     document.getElementById('progress-fill').style.width = '0%';
