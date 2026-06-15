@@ -182,6 +182,14 @@ function updateTimer() {
   if (timerEl) timerEl.textContent = `⏱ ${m}:${s.toString().padStart(2,'0')}`;
 }
 
+function answerText(q) {
+  if (q.type === '判断' || q.type === '判断 ') return q.answer === '对' ? '正确' : '错误';
+  return q.answer.split('').map(l => {
+    const opt = (q.options || []).find(o => o.label === l);
+    return opt ? l + '. ' + opt.text : l;
+  }).join('  ');
+}
+
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a}
 
 function shuffleExamOptions(q) {
@@ -370,7 +378,7 @@ function submitAnswer(qid) {
   if (q.type === '判断' || q.type === '判断 ') correctAnswer = q.answer === '对' ? '正确' : '错误';
 
   result.className = `q-result show ${correct ? 'correct' : 'wrong'}`;
-  result.textContent = correct ? '✅ 回答正确！' : `❌ 正确答案：${correctAnswer}`;
+  result.textContent = correct ? '✅ 回答正确！' : `❌ ${answerText(q)}`;
 
   if (!correct && !wrongIds.includes(q.id)) {
     wrongIds.push(q.id);
@@ -444,10 +452,7 @@ function finishExam() {
   document.getElementById('progress-fill').style.width = '100%';
 
   let correctAnswerText = '对';
-  let wrongAnswerText = q => {
-    if (q.type === '判断' || q.type === '判断 ') return q.answer === '对' ? '正确' : '错误';
-    return q.answer;
-  };
+  let wrongAnswerText = q => answerText(q);
 
   let html = `
     <div class="score-card">

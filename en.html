@@ -239,6 +239,14 @@ function updateTimer() {
   if (timerEl) timerEl.textContent = `⏱ ${m}:${s.toString().padStart(2,'0')}`;
 }
 
+function answerText(q) {
+  if (q.type === '判断' || q.type === '判断 ') return q.answer === '对' ? '正确' : '错误';
+  return q.answer.split('').map(l => {
+    const opt = (q.options || []).find(o => o.label === l);
+    return opt ? l + '. ' + opt.text : l;
+  }).join('  ');
+}
+
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a}
 
 function shuffleExamOptions(q) {
@@ -522,7 +530,7 @@ function submitAnswer(qid) {
   }
 
   result.className = `q-result show ${correct ? 'correct' : 'wrong'}`;
-  result.textContent = correct ? '✅ 回答正确！' : `❌ 正确答案：${q.answer}`;
+  result.textContent = correct ? '✅ 回答正确！' : `❌ ${answerText(q)}`;
 
   if (!correct && !wrongIds.includes(q.id)) {
     wrongIds.push(q.id);
@@ -604,8 +612,8 @@ function finishExam() {
       <span style="font-size:12px;color:#999;">${isCorr ? '+' + (q._examScore||0) : '0'}分</span>
     </div>
     <div id="exam-detail-${i}" style="display:none;padding:8px 4px 12px 26px;font-size:13px;background:#fafafa;border-radius:6px;margin-bottom:4px;">
-      <div style="color:#999;">正确答案：${q.answer}</div>
-      <div style="color:${isCorr?'#27ae60':'#e74c3c'};">你的选择：${ans.sel ? ans.sel : (isCorr?'正确':'错误')}</div>
+      <div style="color:#999;">正确答案：${answerText(q)}</div>
+      <div style="color:${isCorr?'#27ae60':'#e74c3c'};">你的选择：${ans.sel ? (ans.sel+'（'+(q.options.find(o=>o.label===ans.sel)?.text||'无')+'）') : (isCorr?'正确':'错误')}</div>
     </div>`;
   });
 
