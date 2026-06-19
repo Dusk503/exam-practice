@@ -66,6 +66,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
   <select id="chapter-filter"><option value="">全部题型</option></select>
   <select id="mode-select"><option value="shuati">📝 刷题模式</option><option value="exam">📋 考试模式</option></select>
   <button onclick="toggleWrongBook()" id="wb-btn">📕 错题本</button>
+  <button onclick="resetWrongBook()" id="reset-wb-btn" style="background:#e74c3c;">🗑 重置错题本</button>
 </div>
 
 <div id="question-area"></div>
@@ -694,6 +695,20 @@ function toggleWrongBook() {
 
 document.getElementById('chapter-filter').addEventListener('change', () => { if (!examMode) loadQuestions(); });
 document.getElementById('mode-select').addEventListener('change', () => loadQuestions());
+
+function resetWrongBook() {
+  if (wrongIds.length === 0) {
+    alert('错题本已经是空的，无需重置');
+    return;
+  }
+  if (confirm('确定要清空所有错题记录吗？此操作不可撤销！')) {
+    wrongIds = [];
+    localStorage.setItem('enWrongIds', '[]');
+    updateStats();
+    if (wrongMode) { wrongMode = false; document.getElementById('wb-btn').classList.remove('active'); }
+    loadQuestions();
+  }
+}
 
 function updateStats() {
   document.getElementById('header-stats').textContent = `共${QS.length}题 | 错题${wrongIds.length}题`;
