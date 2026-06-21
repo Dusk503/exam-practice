@@ -49,9 +49,19 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
 .score-card .score-label{font-size:15px;opacity:.85;margin-top:4px}
 .score-card .score-detail{font-size:13px;opacity:.7;margin-top:8px}
 .exam-timer{font-size:13px;color:#fff;background:rgba(255,255,255,.2);padding:2px 10px;border-radius:12px;margin-left:8px;white-space:nowrap}
+.maintenance-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(245,245,245,.97);z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;text-align:center}
+.maintenance-overlay h2{font-size:22px;margin-bottom:12px}
+.maintenance-overlay p{font-size:15px;color:#999;line-height:1.6}
+.maintenance-overlay .icon{font-size:56px;margin-bottom:20px}
 </style>
 </head>
 <body>
+
+<div class="maintenance-overlay" id="mt-overlay">
+  <div class="icon">🔧</div>
+  <h2>题库维护中</h2>
+  <p>刷题功能暂时关闭，正在维护升级<br>预计很快恢复，请稍后再来 🚀</p>
+</div>
 
 <div class="header">
   <a href="index.html" class="back-btn">‹</a>
@@ -59,6 +69,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <div><h1>🤖 人工智能基础与应用</h1>
     <div class="stats" id="header-stats">加载中...</div></div>
   </div>
+</div>
+
+<div style="background:#fff3cd;color:#856404;text-align:center;padding:12px 16px;font-size:14px;border-bottom:1px solid #ffeeba">
+  🔧 题库维护中，暂时无法答题
 </div>
 <div class="progress-bar"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
 
